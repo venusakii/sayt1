@@ -1,3 +1,5 @@
+"use client"
+
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { CookieBanner } from "@/components/cookie-banner"
@@ -262,37 +264,43 @@ export default function HomePage() {
                 title: "Glass Skin",
                 description: "Achieve that dewy, translucent glow",
                 image: "/glass-skin-beauty-trend-korean-skincare.jpg",
+                link: "/reviews?trend=glass-skin",
               },
               {
                 title: "Clean Beauty",
                 description: "Natural ingredients for healthier skin",
                 image: "/clean-beauty-natural-organic-skincare-products.jpg",
+                link: "/reviews?trend=clean-beauty",
               },
               {
                 title: "Bold Lips",
                 description: "Statement lip colors that pop",
                 image: "/bold-colorful-lipstick-makeup-trend.jpg",
+                link: "/reviews?trend=bold-lips",
               },
               {
                 title: "Minimalist Makeup",
                 description: "Less is more with natural looks",
                 image: "/minimalist-natural-makeup-no-makeup-look.jpg",
+                link: "/reviews?trend=minimalist",
               },
             ].map((trend, i) => (
-              <Card key={i} className="group cursor-pointer overflow-hidden">
-                <div className="relative">
-                  <img
-                    src={trend.image || "/placeholder.svg"}
-                    alt={trend.title}
-                    className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                  <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="font-semibold text-lg mb-1">{trend.title}</h3>
-                    <p className="text-sm opacity-90">{trend.description}</p>
+              <Link key={i} href={trend.link}>
+                <Card className="group cursor-pointer overflow-hidden">
+                  <div className="relative">
+                    <img
+                      src={trend.image || "/placeholder.svg"}
+                      alt={trend.title}
+                      className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute bottom-4 left-4 text-white">
+                      <h3 className="font-semibold text-lg mb-1">{trend.title}</h3>
+                      <p className="text-sm opacity-90">{trend.description}</p>
+                    </div>
                   </div>
-                </div>
-              </Card>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
@@ -305,16 +313,29 @@ export default function HomePage() {
           <p className="text-xl mb-8 opacity-90">
             Get the latest product reviews, beauty tips, and exclusive recommendations delivered to your inbox.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+          <form
+            className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"
+            onSubmit={(e) => {
+              e.preventDefault()
+              const formData = new FormData(e.currentTarget)
+              const email = formData.get("email") as string
+              if (email) {
+                alert(`Thank you for subscribing with email: ${email}`)
+                e.currentTarget.reset()
+              }
+            }}
+          >
             <input
               type="email"
+              name="email"
               placeholder="Enter your email"
+              required
               className="flex-1 px-4 py-3 rounded-lg text-foreground bg-background border border-border"
             />
-            <Button variant="secondary" size="lg">
+            <Button type="submit" variant="secondary" size="lg">
               Subscribe
             </Button>
-          </div>
+          </form>
         </div>
       </section>
 
