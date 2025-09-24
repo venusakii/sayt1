@@ -246,8 +246,179 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Beauty Trends Section */}
+      <section className="py-20 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-foreground mb-6">Latest Beauty Trends</h2>
+            <p className="text-xl text-muted-foreground">
+              Stay ahead of the curve with the hottest beauty trends and innovations.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                title: "Glass Skin",
+                description: "Achieve that dewy, translucent glow",
+                image: "/glass-skin-beauty-trend-korean-skincare.jpg",
+              },
+              {
+                title: "Clean Beauty",
+                description: "Natural ingredients for healthier skin",
+                image: "/clean-beauty-natural-organic-skincare-products.jpg",
+              },
+              {
+                title: "Bold Lips",
+                description: "Statement lip colors that pop",
+                image: "/bold-colorful-lipstick-makeup-trend.jpg",
+              },
+              {
+                title: "Minimalist Makeup",
+                description: "Less is more with natural looks",
+                image: "/minimalist-natural-makeup-no-makeup-look.jpg",
+              },
+            ].map((trend, i) => (
+              <Card key={i} className="group cursor-pointer overflow-hidden">
+                <div className="relative">
+                  <img
+                    src={trend.image || "/placeholder.svg"}
+                    alt={trend.title}
+                    className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <div className="absolute bottom-4 left-4 text-white">
+                    <h3 className="font-semibold text-lg mb-1">{trend.title}</h3>
+                    <p className="text-sm opacity-90">{trend.description}</p>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Newsletter Section */}
+      <section className="py-20 bg-primary text-primary-foreground">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-playfair text-4xl lg:text-5xl font-bold mb-6">Stay updated with beauty trends</h2>
+          <p className="text-xl mb-8 opacity-90">
+            Get the latest product reviews, beauty tips, and exclusive recommendations delivered to your inbox.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="flex-1 px-4 py-3 rounded-lg text-foreground bg-background border border-border"
+            />
+            <Button variant="secondary" size="lg">
+              Subscribe
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Popular Brands Section */}
       <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-foreground mb-6">Featured Brands</h2>
+            <p className="text-xl text-muted-foreground">
+              Discover products from the world's most trusted beauty brands.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
+            {["CeraVe", "The Ordinary", "Fenty Beauty", "Glossier", "Drunk Elephant", "Tatcha"].map((brand, i) => (
+              <div key={i} className="text-center group cursor-pointer">
+                <div className="bg-muted/50 rounded-lg p-6 group-hover:bg-muted transition-colors">
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <span className="font-bold text-primary text-lg">{brand.charAt(0)}</span>
+                  </div>
+                  <h3 className="font-semibold text-sm">{brand}</h3>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Beauty Tips Section */}
+      <section className="py-20 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-foreground mb-6">Expert Beauty Tips</h2>
+            <p className="text-xl text-muted-foreground">
+              Professional advice to help you get the most out of your beauty routine.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Morning Skincare Routine",
+                tip: "Always apply sunscreen as the last step of your morning routine, even on cloudy days.",
+                icon: "☀️",
+              },
+              {
+                title: "Makeup Application",
+                tip: "Use a damp beauty sponge to blend foundation for a natural, airbrushed finish.",
+                icon: "💄",
+              },
+              {
+                title: "Product Storage",
+                tip: "Store vitamin C serums in a cool, dark place to maintain their potency and effectiveness.",
+                icon: "🧴",
+              },
+            ].map((tip, i) => (
+              <Card key={i} className="p-6 text-center">
+                <CardContent className="pt-6">
+                  <div className="text-4xl mb-4">{tip.icon}</div>
+                  <h3 className="font-semibold text-xl mb-3">{tip.title}</h3>
+                  <p className="text-muted-foreground">{tip.tip}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            {[
+              { number: "50K+", label: "Happy Customers" },
+              { number: "500+", label: "Products Reviewed" },
+              { number: "98%", label: "Satisfaction Rate" },
+              { number: "24/7", label: "Customer Support" },
+            ].map((stat, i) => (
+              <div key={i}>
+                <div className="font-playfair text-4xl lg:text-5xl font-bold text-primary mb-2">{stat.number}</div>
+                <div className="text-muted-foreground font-medium">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-foreground mb-6">
+            Ready to transform your beauty routine?
+          </h2>
+          <p className="text-xl text-muted-foreground mb-8">
+            Explore our comprehensive reviews and find your perfect products today.
+          </p>
+          <Button size="lg" asChild>
+            <Link href="/reviews">Start Exploring</Link>
+          </Button>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-foreground mb-6">
@@ -294,41 +465,6 @@ export default function HomePage() {
               </Card>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Newsletter Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-playfair text-4xl lg:text-5xl font-bold mb-6">Stay updated with beauty trends</h2>
-          <p className="text-xl mb-8 opacity-90">
-            Get the latest product reviews, beauty tips, and exclusive recommendations delivered to your inbox.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 px-4 py-3 rounded-lg text-foreground bg-background border border-border"
-            />
-            <Button variant="secondary" size="lg">
-              Subscribe
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Ready to transform your beauty routine?
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8">
-            Explore our comprehensive reviews and find your perfect products today.
-          </p>
-          <Button size="lg" asChild>
-            <Link href="/reviews">Start Exploring</Link>
-          </Button>
         </div>
       </section>
 
