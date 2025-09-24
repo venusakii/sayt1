@@ -2,13 +2,13 @@
 
 import Link from "next/link"
 import { useState } from "react"
-import { usePathname } from "next/navigation" // added usePathname for active link detection
+import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
-import { Menu, X, ShoppingBag } from "lucide-react"
+import { Menu, X } from "lucide-react"
 
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const pathname = usePathname() // get current pathname for active link styling
+  const pathname = usePathname()
 
   const isActive = (href: string) => pathname === href
 
@@ -49,10 +49,6 @@ export function Navigation() {
           </div>
 
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="sm">
-              <ShoppingBag className="h-5 w-5" />
-            </Button>
-
             {/* Mobile menu button */}
             <Button variant="ghost" size="sm" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -67,28 +63,28 @@ export function Navigation() {
               <Link
                 href="/"
                 className={`transition-colors ${isActive("/") ? "text-primary font-medium" : "text-foreground hover:text-primary"}`}
-                onClick={() => setIsMenuOpen(false)} // close mobile menu on click
+                onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/reviews"
                 className={`transition-colors ${isActive("/reviews") ? "text-primary font-medium" : "text-foreground hover:text-primary"}`}
-                onClick={() => setIsMenuOpen(false)} // close mobile menu on click
+                onClick={() => setIsMenuOpen(false)}
               >
                 Reviews
               </Link>
               <Link
                 href="/about"
                 className={`transition-colors ${isActive("/about") ? "text-primary font-medium" : "text-foreground hover:text-primary"}`}
-                onClick={() => setIsMenuOpen(false)} // close mobile menu on click
+                onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="/contact"
                 className={`transition-colors ${isActive("/contact") ? "text-primary font-medium" : "text-foreground hover:text-primary"}`}
-                onClick={() => setIsMenuOpen(false)} // close mobile menu on click
+                onClick={() => setIsMenuOpen(false)}
               >
                 Contact
               </Link>

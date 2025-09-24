@@ -109,35 +109,39 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="group cursor-pointer overflow-hidden">
-              <div className="relative">
-                <img
-                  src="/luxury-skincare-products-on-marble-surface.jpg"
-                  alt="Skincare"
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
-                <div className="absolute bottom-6 left-6">
-                  <h3 className="font-playfair text-3xl font-bold text-white mb-2">Skincare</h3>
-                  <p className="text-white/90">Nourish and protect your skin</p>
+            <Link href="/reviews?category=skincare">
+              <Card className="group cursor-pointer overflow-hidden">
+                <div className="relative">
+                  <img
+                    src="/luxury-skincare-products-on-marble-surface.jpg"
+                    alt="Skincare"
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
+                  <div className="absolute bottom-6 left-6">
+                    <h3 className="font-playfair text-3xl font-bold text-white mb-2">Skincare</h3>
+                    <p className="text-white/90">Nourish and protect your skin</p>
+                  </div>
                 </div>
-              </div>
-            </Card>
+              </Card>
+            </Link>
 
-            <Card className="group cursor-pointer overflow-hidden">
-              <div className="relative">
-                <img
-                  src="/elegant-makeup-products-and-brushes.jpg"
-                  alt="Makeup"
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
-                <div className="absolute bottom-6 left-6">
-                  <h3 className="font-playfair text-3xl font-bold text-white mb-2">Makeup</h3>
-                  <p className="text-white/90">Express your unique beauty</p>
+            <Link href="/reviews?category=makeup">
+              <Card className="group cursor-pointer overflow-hidden">
+                <div className="relative">
+                  <img
+                    src="/elegant-makeup-products-and-brushes.jpg"
+                    alt="Makeup"
+                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
+                  <div className="absolute bottom-6 left-6">
+                    <h3 className="font-playfair text-3xl font-bold text-white mb-2">Makeup</h3>
+                    <p className="text-white/90">Express your unique beauty</p>
+                  </div>
                 </div>
-              </div>
-            </Card>
+              </Card>
+            </Link>
           </div>
         </div>
       </section>
