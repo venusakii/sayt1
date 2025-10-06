@@ -12,494 +12,383 @@ import { notFound } from "next/navigation"
 
 // Mock data - in a real app, this would come from a database
 const products = {
-  "vitamin-c-brightening-serum": {
-    slug: "vitamin-c-brightening-serum",
-    name: "Vitamin C Brightening Serum",
+  "la-roche-posay-vitamin-c-serum": {
+    slug: "la-roche-posay-vitamin-c-serum",
+    name: "La Roche-Posay Vitamin C Face Serum",
     category: "Skincare",
     price: "$45.99",
     originalPrice: "$59.99",
     rating: 4.8,
     reviews: 234,
-    images: ["/vitamin-c-serum.png", "/vitamin-c-serum-2.jpg", "/vitamin-c-serum-3.jpg"],
+    images: [
+      "https://m.media-amazon.com/images/I/612rQ+tTL6L._SX522_.jpg",
+      "https://m.media-amazon.com/images/I/612rQ+tTL6L._SX522_.jpg",
+      "https://m.media-amazon.com/images/I/612rQ+tTL6L._SX522_.jpg",
+    ],
     description:
-      "This powerful antioxidant serum is formulated with 20% L-Ascorbic Acid to brighten and even skin tone while protecting against environmental damage.",
-    ingredients: ["20% L-Ascorbic Acid", "Hyaluronic Acid", "Vitamin E", "Ferulic Acid", "Aloe Vera Extract"],
+      "Antioxidant-rich vitamin C serum that brightens skin and reduces signs of aging for a radiant glow with thermal spring water for soothing.",
+    ingredients: ["12% Pure Vitamin C", "Hyaluronic Acid", "Salicylic Acid", "Thermal Spring Water", "Vitamin E"],
     pros: [
-      "Visibly brightens skin in 2-3 weeks",
-      "Lightweight, non-greasy formula",
-      "Suitable for sensitive skin",
-      "Excellent value for money",
-      "Minimal packaging waste",
+      "Brightens dull skin effectively",
+      "Reduces hyperpigmentation over time",
+      "Gentle on sensitive skin",
+      "Fast-absorbing, non-greasy texture",
+      "Dermatologist-tested formula",
     ],
     cons: [
-      "May cause initial tingling sensation",
-      "Requires consistent use for best results",
-      "Bottle could be larger for the price",
+      "May oxidize if not stored properly",
+      "Slight tingling on first use",
+      "Dropper can be messy",
     ],
-    amazonUrl: "https://amazon.com/dp/example1",
+    amazonUrl: "https://www.amazon.com/Roche-Posay-vitamin-renovator-radiance/dp/",
     overallScore: 4.8,
     effectiveness: 4.9,
     value: 4.7,
     packaging: 4.6,
-    skinType: ["All skin types", "Sensitive skin friendly"],
+    skinType: ["All skin types", "Sensitive skin", "Dull skin"],
     howToUse:
-      "Apply 2-3 drops to clean, dry skin in the morning. Follow with moisturizer and SPF. Start with every other day and gradually increase to daily use.",
-    reviewText: `After testing this Vitamin C serum for 6 weeks, I can confidently say it's one of the best affordable options on the market. The 20% L-Ascorbic Acid concentration is impressive for the price point, and the addition of hyaluronic acid helps prevent the dryness often associated with vitamin C products.
+      "Apply 3-4 drops to clean, dry face in the morning. Gently pat in and follow with moisturizer and sunscreen. Use daily for best results.",
+    reviewText: `I've been using the La Roche-Posay Vitamin C Serum for over two months now, and it's become an essential part of my morning routine. The 12% pure vitamin C concentration is potent yet gentle, thanks to the inclusion of salicylic acid for gentle exfoliation and thermal spring water to soothe any potential irritation.
 
-The texture is lightweight and absorbs quickly without leaving any sticky residue. I noticed a visible improvement in my skin's brightness and overall radiance within the first two weeks of use. Dark spots from previous breakouts have significantly faded, and my skin looks more even-toned.
+From the first week, I noticed a subtle brightening effect - my skin tone looked more even, and the overall dullness that comes from winter months started to fade. After a full month, dark spots from old acne have visibly lightened, and my complexion has that healthy, radiant glow I've been chasing. The serum's lightweight, watery texture absorbs in seconds without any stickiness, layering beautifully under makeup or other serums.
 
-The packaging is simple but effective, with a dark glass bottle that protects the vitamin C from light degradation. The dropper dispenser makes it easy to control the amount used, though I do wish the bottle was slightly larger given how quickly I go through it with daily use.
-
-One thing to note is that this serum can cause a slight tingling sensation when first introduced to your routine, especially if you have sensitive skin. I recommend starting with every other day and gradually building up to daily use.
-
-Overall, this is an excellent vitamin C serum that delivers on its promises without breaking the bank. It's become a staple in my morning routine, and I've already repurchased it twice.`,
+The dark glass bottle with dropper is practical for preserving the vitamin C's potency, though I do keep it in a cool, dark place as recommended. There's a faint medicinal scent that dissipates quickly, which I don't mind at all. For the price, this delivers clinical-level results without the hassle of prescription treatments. If you're new to vitamin C, this is an excellent starting point - just remember sunscreen is non-negotiable!`,
   },
-  "cerave-hydrating-cleanser": {
-    slug: "cerave-hydrating-cleanser",
-    name: "CeraVe Hydrating Facial Cleanser",
+  "collagen-face-moisturizer-cream": {
+    slug: "collagen-face-moisturizer-cream",
+    name: "Collagen Face Moisturizer Cream",
     category: "Skincare",
-    price: "$12.99",
-    originalPrice: "$15.99",
-    rating: 4.6,
-    reviews: 8247,
-    images: ["/cerave-hydrating-cleanser.jpg", "/cerave-cleanser-back.jpg", "/cerave-cleanser-texture.jpg"],
-    description:
-      "A gentle, non-foaming cleanser that removes makeup and dirt while maintaining the skin's natural protective barrier with three essential ceramides and hyaluronic acid.",
-    ingredients: ["Ceramides 1, 3, 6-II", "Hyaluronic Acid", "Niacinamide", "Vitamin B5", "MVE Technology"],
-    pros: [
-      "Gentle formula suitable for sensitive skin",
-      "Effectively removes makeup without stripping",
-      "Contains beneficial ceramides and hyaluronic acid",
-      "Great value for money",
-      "Dermatologist recommended",
-    ],
-    cons: [
-      "May not remove waterproof makeup completely",
-      "Some users prefer foaming cleansers",
-      "Pump dispenser can be inconsistent",
-    ],
-    amazonUrl: "https://amazon.com/dp/B01MSSDEPK",
-    overallScore: 4.6,
-    effectiveness: 4.7,
-    value: 4.8,
-    packaging: 4.3,
-    skinType: ["All skin types", "Sensitive skin", "Dry skin"],
-    howToUse:
-      "Apply to wet skin, massage gently, and rinse with lukewarm water. Use morning and evening as part of your skincare routine.",
-    reviewText: `After using the CeraVe Hydrating Facial Cleanser for 8 weeks, I can understand why it's become such a cult favorite in the skincare community. This gentle, non-foaming cleanser has completely changed my cleansing routine for the better.
-
-The texture is creamy and luxurious, feeling more like a moisturizing lotion than a traditional cleanser. It glides smoothly across the skin and doesn't create any foam, which initially felt strange but I quickly grew to love. The cleanser effectively removes daily makeup, sunscreen, and impurities without leaving my skin feeling tight or stripped.
-
-What sets this cleanser apart is its impressive ingredient list. The inclusion of three essential ceramides (1, 3, and 6-II) helps restore and maintain the skin's natural barrier, while hyaluronic acid provides an extra boost of hydration. The MVE (MultiVesicular Emulsion) technology ensures these ingredients are released slowly throughout the day.
-
-The 12 fl oz pump bottle is practical and hygienic, though I've noticed the pump can sometimes dispense inconsistent amounts. The price point is excellent for the quality and quantity you receive - this bottle has lasted me nearly 3 months with twice-daily use.
-
-My skin feels noticeably softer and more hydrated since incorporating this cleanser. It's particularly excellent for those with sensitive or dry skin, as it cleanses without disruption to the skin barrier.`,
-  },
-  "the-ordinary-niacinamide": {
-    slug: "the-ordinary-niacinamide",
-    name: "The Ordinary Niacinamide 10% + Zinc 1%",
-    category: "Skincare",
-    price: "$7.90",
-    originalPrice: null,
-    rating: 4.3,
-    reviews: 12456,
-    images: ["/the-ordinary-niacinamide.jpg", "/ordinary-niacinamide-bottle.jpg", "/ordinary-niacinamide-texture.jpg"],
-    description:
-      "A high-strength vitamin and mineral blemish formula with 10% niacinamide and 1% zinc PCA to reduce the appearance of skin blemishes and congestion.",
-    ingredients: ["10% Niacinamide", "1% Zinc PCA", "Aqua", "Pentylene Glycol", "Zinc PCA"],
-    pros: [
-      "Incredibly affordable price point",
-      "High concentration of active ingredients",
-      "Helps reduce oil production and pore appearance",
-      "Suitable for acne-prone skin",
-      "Minimalist, effective formulation",
-    ],
-    cons: [
-      "Can cause purging in first few weeks",
-      "May be too strong for sensitive skin",
-      "Sticky texture that some find unpleasant",
-      "Small bottle size",
-    ],
-    amazonUrl: "https://amazon.com/dp/B06Y2GGF9Q",
-    overallScore: 4.3,
-    effectiveness: 4.5,
-    value: 4.9,
-    packaging: 3.8,
-    skinType: ["Oily skin", "Acne-prone skin", "Combination skin"],
-    howToUse:
-      "Apply a few drops to clean skin before heavier creams. Use once daily, preferably in the evening. Start with every other day if you have sensitive skin.",
-    reviewText: `The Ordinary's Niacinamide 10% + Zinc 1% serum has been a game-changer in my skincare routine, though it definitely comes with a learning curve. At under $8, this serum delivers professional-grade results that rival products costing ten times more.
-
-The 10% niacinamide concentration is quite high, which means this serum is serious business. I noticed a significant reduction in oil production within the first two weeks of use, and my pores appeared visibly smaller after about a month. The 1% zinc PCA helps with blemish control, and I've seen fewer breakouts since incorporating this into my routine.
-
-However, the texture is where this product loses some points. It's quite sticky and can pill under certain moisturizers or makeup. I've learned to use it sparingly - just 2-3 drops for my entire face - and to wait a few minutes before applying other products. The stickiness does fade once fully absorbed.
-
-I experienced some initial purging during the first three weeks, which is normal when introducing niacinamide at this concentration. My skin looked worse before it looked better, but persistence paid off. Those with sensitive skin should definitely start slowly - perhaps every other day initially.
-
-The packaging is basic but functional, though the small 30ml bottle means frequent repurchasing. For the price point, this is still exceptional value. This serum has earned its place as a holy grail product for oily and acne-prone skin types.`,
-  },
-  "fenty-beauty-gloss-bomb": {
-    slug: "fenty-beauty-gloss-bomb",
-    name: "Fenty Beauty Gloss Bomb Universal Lip Luminizer",
-    category: "Makeup",
-    price: "$22.00",
-    originalPrice: null,
-    rating: 4.7,
-    reviews: 3892,
-    images: ["/fenty-beauty-gloss-bomb.jpg", "/fenty-gloss-bomb-open.jpg", "/fenty-gloss-bomb-lips.jpg"],
-    description:
-      "An explosive lip gloss that delivers universal sheer-to-medium buildable coverage with incredible shine that looks amazing on everyone.",
-    ingredients: [
-      "Polybutene",
-      "Diisostearyl Malate",
-      "Hydrogenated Polyisobutene",
-      "Tridecyl Trimellitate",
-      "Vanilla Extract",
-    ],
-    pros: [
-      "Universal shade that flatters all skin tones",
-      "Long-lasting shine without stickiness",
-      "Comfortable, non-drying formula",
-      "Beautiful packaging and applicator",
-      "Subtle vanilla scent",
-    ],
-    cons: [
-      "Higher price point for a lip gloss",
-      "Can emphasize lip texture if not prepped",
-      "May transfer onto cups/utensils",
-      "Limited shade range in this formula",
-    ],
-    amazonUrl: "https://amazon.com/dp/B075R8QHPX",
-    overallScore: 4.7,
-    effectiveness: 4.8,
-    value: 4.2,
-    packaging: 4.9,
-    skinType: ["All skin tones", "All lip types"],
-    howToUse:
-      "Apply directly to lips using the doe-foot applicator. Can be worn alone or over lipstick for added shine. Reapply as needed throughout the day.",
-    reviewText: `Fenty Beauty's Gloss Bomb in Fu$$y has completely revolutionized my relationship with lip gloss. As someone who typically avoided glosses due to their sticky, uncomfortable feel, this product has converted me into a daily gloss wearer.
-
-The formula is absolutely incredible - it provides a beautiful, mirror-like shine without any of the tackiness I associate with traditional lip glosses. The coverage is buildable, offering a sheer wash of color with one swipe or more intensity with additional layers. The "universal" claim is not marketing hype - this peachy-pink shade truly complements every skin tone I've seen it on.
-
-What impressed me most is the longevity. Unlike other glosses that disappear after drinking water, Gloss Bomb maintains its shine for hours. Even after eating, there's still a subtle luminosity left behind. The vanilla scent is delicate and pleasant without being overwhelming.
-
-The packaging deserves special mention - the clear tube with rose gold cap feels luxurious and substantial. The doe-foot applicator picks up the perfect amount of product and allows for precise application. It's definitely Instagram-worthy and looks beautiful on any vanity.
-
-At $22, it's pricier than drugstore alternatives, but the quality justifies the cost. A little goes a long way, and I've been using mine daily for three months with plenty left. This has become my signature lip product and I've already repurchased in multiple shades.`,
-  },
-  "waterproof-mascara": {
-    slug: "waterproof-mascara",
-    name: "Waterproof Mascara - Volume & Length",
-    category: "Makeup",
-    price: "$24.99",
-    originalPrice: "$32.99",
-    rating: 4.5,
-    reviews: 523,
-    images: ["/waterproof-mascara-tube.jpg", "/mascara-wand-closeup.jpg", "/mascara-application-on-lashes.jpg"],
-    description:
-      "A high-performance waterproof mascara that delivers dramatic volume and length while staying smudge-proof and flake-free all day long.",
-    ingredients: ["Beeswax", "Carnauba Wax", "Panthenol (Pro-Vitamin B5)", "Vitamin E", "Nylon Fibers"],
-    pros: [
-      "Truly waterproof - survives swimming and tears",
-      "Dramatic volume and length without clumping",
-      "Stays put for 12+ hours",
-      "Easy to remove with oil-based cleanser",
-      "Curved brush reaches every lash",
-    ],
-    cons: [
-      "Requires oil-based makeup remover",
-      "Can be slightly difficult to build up layers",
-      "Wand may be too large for short lashes",
-      "Dries quickly in the tube",
-    ],
-    amazonUrl: "https://amazon.com/dp/B08EXAMPLE",
-    overallScore: 4.5,
-    effectiveness: 4.7,
-    value: 4.6,
-    packaging: 4.2,
-    skinType: ["All eye types", "Sensitive eyes", "Contact lens wearers"],
-    howToUse:
-      "Start at the base of lashes and wiggle the wand upward in a zigzag motion. Apply 2-3 coats for maximum volume. Remove with an oil-based makeup remover or cleansing balm.",
-    reviewText: `After putting this waterproof mascara through rigorous testing - including a beach vacation, multiple workouts, and even a few emotional movie nights - I can confidently say it lives up to its waterproof claims. This mascara truly doesn't budge once it sets.
-
-The formula is buildable and creates impressive volume and length without the dreaded spider lashes effect. The curved brush design is excellent for reaching corner lashes and lower lashes, though those with very short lashes might find it slightly oversized. The bristles are densely packed, which helps separate lashes while depositing plenty of product.
-
-What impressed me most is how this mascara maintains its integrity throughout the day. After 12 hours of wear, including a sweaty gym session, my lashes still looked freshly applied with no flaking, smudging, or raccoon eyes. The waterproof formula is seriously impressive - I tested it in the pool and it didn't budge at all.
-
-The removal process does require an oil-based cleanser or makeup remover, which is standard for waterproof formulas. I found that a cleansing balm works best, melting the mascara away without excessive rubbing. Regular water-based cleansers won't cut it, so be prepared to invest in a good makeup remover.
-
-One minor drawback is that the formula can dry out faster than regular mascaras, so make sure to close the tube tightly after each use. I've been using mine for two months and it's still performing well, but I've noticed it's slightly less wet than when I first opened it.
-
-At $24.99, this is reasonably priced for a high-quality waterproof mascara. It's perfect for anyone who needs their makeup to last through challenging conditions - whether that's humidity, exercise, or emotional moments. This has become my go-to mascara for special occasions and active days.`,
-  },
-  "matte-liquid-lipstick-set": {
-    slug: "matte-liquid-lipstick-set",
-    name: "Matte Liquid Lipstick Set",
-    category: "Makeup",
     price: "$29.99",
     originalPrice: "$39.99",
-    rating: 4.6,
-    reviews: 456,
-    images: ["/matte- lipstick-set.jpg", "/placeholder.svg?key= lipstick2", "/placeholder.svg?key= lipstick3"],
-    description:
-      "A collection of 6 highly pigmented, long-lasting liquid lipsticks in stunning matte shades that stay put all day without drying out your lips.",
-    ingredients: ["Vitamin E", "Jojoba Oil", "Shea Butter", "Mineral Pigments", "Beeswax"],
-    pros: [
-      "Excellent color payoff with one swipe",
-      "Comfortable matte finish that doesn't crack",
-      "Long-lasting formula (8+ hours)",
-      "Great shade variety in one set",
-      "Affordable price for 6 lipsticks",
-    ],
-    cons: [
-      "Can be slightly drying after extended wear",
-      "Requires lip liner for precise application",
-      "Some shades may settle into lip lines",
-    ],
-    amazonUrl: "https://amazon.com/dp/B08LIPSTICK",
-    overallScore: 4.6,
-    effectiveness: 4.7,
-    value: 4.8,
-    packaging: 4.3,
-    skinType: ["All lip types", "Best with lip prep"],
-    howToUse:
-      "Exfoliate and moisturize lips before application. Apply from the center of lips outward using the precision applicator. Allow to dry for 30 seconds for best results.",
-    reviewText: `This matte liquid lipstick set has become my go-to for everyday wear and special occasions alike. The set includes 6 versatile shades ranging from nude to bold red, making it perfect for any look or mood.
-
-The formula is impressively pigmented - one swipe delivers full, opaque color that looks professional and polished. Unlike many matte lipsticks that feel like they're sucking the life out of your lips, this formula contains moisturizing ingredients like jojoba oil and shea butter that keep lips comfortable throughout the day.
-
-I've tested the wear time extensively, and these lipsticks truly last 8+ hours with minimal fading. They survive coffee, meals, and even light snacking without completely disappearing. There is some transfer onto cups, but the color remains vibrant on the lips.
-
-The applicator is precise and makes application easy, though I do recommend using a lip liner for the boldest shades to prevent any feathering. The packaging is sleek and compact, making it easy to carry multiple shades in your makeup bag.
-
-At $29.99 for 6 full-sized lipsticks, this set offers incredible value. Each shade is wearable and flattering, with no duds in the collection.`,
-  },
-  "hydrating-night-cream": {
-    slug: "hydrating-night-cream",
-    name: "Hydrating Night Cream",
-    category: "Skincare",
-    price: "$62.99",
-    originalPrice: "$79.99",
-    rating: 4.9,
-    reviews: 189,
-    images: ["/luxury-night-cream-jar.jpg", "/placeholder.svg?key=cream2", "/placeholder.svg?key=cream3"],
-    description:
-      "A rich, luxurious night cream that works while you sleep to deeply hydrate, repair, and rejuvenate your skin with powerful anti-aging ingredients.",
-    ingredients: ["Retinol", "Peptides", "Hyaluronic Acid", "Squalane", "Niacinamide", "Ceramides"],
-    pros: [
-      "Deeply hydrating without feeling heavy",
-      "Visible improvement in skin texture",
-      "Reduces fine lines and wrinkles",
-      "Luxurious texture and scent",
-      "Wake up with plump, glowing skin",
-    ],
-    cons: [
-      "Higher price point",
-      "May be too rich for oily skin types",
-      "Contains retinol (not suitable for pregnancy)",
-    ],
-    amazonUrl: "https://amazon.com/dp/B08NIGHTCREAM",
-    overallScore: 4.9,
-    effectiveness: 4.9,
-    value: 4.5,
-    packaging: 4.8,
-    skinType: ["Dry skin", "Mature skin", "Normal skin"],
-    howToUse:
-      "Apply to clean, dry skin every evening. Gently massage into face and neck using upward motions. Allow to absorb fully before sleeping. Use SPF during the day as this product contains retinol.",
-    reviewText: `This hydrating night cream has transformed my nighttime skincare routine into a luxurious self-care ritual. The texture is rich and creamy, yet it absorbs beautifully without leaving a greasy residue on my pillowcase.
-
-The ingredient list reads like a skincare dream team - retinol for cell turnover, peptides for firmness, hyaluronic acid for hydration, and ceramides for barrier repair. After 8 weeks of consistent use, I've noticed a significant improvement in my skin's texture and tone. Fine lines around my eyes have softened, and my skin looks noticeably more radiant.
-
-What I love most is waking up with plump, hydrated skin that looks refreshed and glowing. The cream has a subtle, sophisticated scent that makes the application experience feel spa-like. The jar packaging is elegant and substantial, though I do wish it came with a spatula for more hygienic application.
-
-At $62.99, this is definitely an investment piece in your skincare routine, but the results justify the price. A little goes a long way, and the jar has lasted me nearly 3 months with nightly use.`,
-  },
-  "gentle-cleansing-oil": {
-    slug: "gentle-cleansing-oil",
-    name: "Gentle Cleansing Oil",
-    category: "Skincare",
-    price: "$38.99",
-    originalPrice: null,
     rating: 4.7,
-    reviews: 312,
-    images: ["/cleansing-oil-bottle.jpg", "/placeholder.svg?key=oil2", "/placeholder.svg?key=oil3"],
+    reviews: 189,
+    images: [
+      "https://m.media-amazon.com/images/I/71PmiO3ss2L._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71PmiO3ss2L._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71PmiO3ss2L._SX679_.jpg",
+    ],
     description:
-      "A lightweight cleansing oil that effortlessly melts away makeup, sunscreen, and impurities while nourishing your skin with botanical oils.",
-    ingredients: ["Jojoba Oil", "Grapeseed Oil", "Vitamin E", "Chamomile Extract", "Green Tea Extract"],
+      "Hydrating collagen-infused cream that firms and plumps skin for a youthful appearance with added peptides for elasticity.",
+    ingredients: ["Hydrolyzed Collagen", "Peptides", "Hyaluronic Acid", "Niacinamide", "Shea Butter"],
     pros: [
-      "Removes waterproof makeup effortlessly",
-      "Doesn't leave oily residue",
-      "Gentle on sensitive skin",
-      "Emulsifies beautifully with water",
-      "Pleasant natural scent",
+      "Noticeable plumping effect",
+      "Lightweight yet deeply moisturizing",
+      "Improves skin firmness",
+      "Non-comedogenic formula",
+      "Pleasant subtle scent",
     ],
     cons: [
-      "May require double cleansing for very oily skin",
-      "Bottle design makes it hard to control amount",
-      "Can be slippery to handle in shower",
+      "May pill under certain serums",
+      "Jar packaging less hygienic",
+      "Results take 4-6 weeks",
     ],
-    amazonUrl: "https://amazon.com/dp/B08CLEANSINGOIL",
+    amazonUrl: "https://www.amazon.com/Face-Moisturizer-Collagen-Cream-Moisturizing/dp/",
     overallScore: 4.7,
     effectiveness: 4.8,
-    value: 4.6,
-    packaging: 4.4,
-    skinType: ["All skin types", "Dry skin", "Sensitive skin"],
+    value: 4.7,
+    packaging: 4.5,
+    skinType: ["Dry skin", "Mature skin", "Combination skin"],
     howToUse:
-      "Apply 2-3 pumps to dry skin and massage gently. Add water to emulsify, then rinse thoroughly. Follow with a water-based cleanser if desired.",
-    reviewText: `This cleansing oil has revolutionized my makeup removal routine. It effortlessly dissolves even the most stubborn waterproof mascara and long-wear foundation without any harsh rubbing or tugging on the delicate eye area.
+      "Apply a dime-sized amount to clean face and neck morning and evening. Massage gently until absorbed. Follow with SPF in the AM.",
+    reviewText: `This collagen moisturizer has been a pleasant surprise in my routine - it's one of those products that quietly delivers results over time. The formula feels luxurious, with a creamy texture that melts into the skin without any heaviness, making it suitable even for my combination skin type.
 
-The formula is lightweight and doesn't feel heavy or greasy on the skin. When you add water, it emulsifies into a milky texture that rinses away cleanly, leaving no oily residue behind. My skin feels soft, clean, and nourished - never stripped or tight.
+After consistent use for six weeks, I've seen a subtle but real improvement in my skin's firmness around the jawline and cheeks. The hydrolyzed collagen and peptides work together to plump and support elasticity, while hyaluronic acid ensures deep hydration without greasiness. My makeup applies more smoothly now, and I wake up with softer, more supple skin.
 
-I appreciate that this cleansing oil is formulated with nourishing botanical oils rather than mineral oil. The natural ingredients make it suitable for sensitive skin, and I haven't experienced any irritation or breakouts since incorporating it into my routine.`,
+The jar comes with a spatula, which is a nice touch for hygiene, though I still prefer pump packaging. The scent is light and clean, fading quickly. At this price, it's an accessible way to incorporate anti-aging benefits without overwhelming actives. It's not a miracle worker overnight, but for daily maintenance, it's fantastic value.`,
   },
-  "eyeshadow-palette-neutral-tones": {
-    slug: "eyeshadow-palette-neutral-tones",
-    name: "Eyeshadow Palette - Neutral Tones",
+  "wonderskin-lip-stain-blading": {
+    slug: "wonderskin-lip-stain-blading",
+    name: "Wonderskin Lip Stain Blading Long-Lasting",
+    category: "Makeup",
+    price: "$19.99",
+    originalPrice: "$24.99",
+    rating: 4.6,
+    reviews: 456,
+    images: [
+      "https://m.media-amazon.com/images/I/713iq9WwmUL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/713iq9WwmUL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/713iq9WwmUL._SX679_.jpg",
+    ],
+    description:
+      "Transfer-proof, waterproof lip stain that delivers all-day color without smudging using innovative blading applicator technology.",
+    ingredients: ["Aloe Vera", "Vitamin E", "Hyaluronic Acid", "Glycerin", "Natural Pigments"],
+    pros: [
+      "Lasts 12+ hours without fading",
+      "No bleeding or feathering",
+      "Hydrating despite matte finish",
+      "Easy precision applicator",
+      "Buildable color intensity",
+    ],
+    cons: [
+      "Removal requires oil-based cleanser",
+      "Can feel drying if not prepped",
+      "Limited shade variety",
+    ],
+    amazonUrl: "https://www.amazon.com/Wonderskin-Blading-Lasting-Transfer-Waterproof/dp/",
+    overallScore: 4.6,
+    effectiveness: 4.7,
+    value: 4.6,
+    packaging: 4.5,
+    skinType: ["All lip types", "Dry lips with prep"],
+    howToUse:
+      "Exfoliate lips first. Apply using the blading applicator in short strokes. Let dry for 30 seconds. Top with gloss if desired.",
+    reviewText: `The Wonderskin Lip Stain has solved my biggest lip makeup frustration - longevity without the discomfort. The unique blading applicator glides on like a marker, depositing even color that dries to a natural, non-shiny finish. I love how it doesn't feather or bleed, even on my thinner lip lines.
+
+Wear time is impressive: after a full day of eating, drinking, and talking, the color remains vibrant with minimal touch-up needed. It's surprisingly hydrating thanks to the aloe and hyaluronic acid, so my lips don't feel parched like with traditional stains. The shades are sheer but buildable, giving a your-lips-but-better vibe.
+
+Removal takes effort - micellar water alone won't cut it; I need an oil cleanser - but that's the trade-off for such staying power. At under $20, this is a budget-friendly alternative to salon lip tattoos for those long days. It's become my go-to for events where I can't fuss with reapplication.`,
+  },
+  "anua-heartleaf-cleansing-cleanser": {
+    slug: "anua-heartleaf-cleansing-cleanser",
+    name: "ANUA Heartleaf 77% Soothing Cleanser",
+    category: "Skincare",
+    price: "$18.99",
+    originalPrice: "$22.99",
+    rating: 4.7,
+    reviews: 312,
+    images: [
+      "https://m.media-amazon.com/images/I/61nHrsCJT1L._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61nHrsCJT1L._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61nHrsCJT1L._SX679_.jpg",
+    ],
+    description:
+      "Gentle, pH-balanced cleanser that removes impurities while calming sensitive skin and reducing blackheads with 77% heartleaf extract.",
+    ingredients: ["77% Heartleaf Extract", "Panthenol", "Allantoin", "Betaine", "No Sulfates"],
+    pros: [
+      "Ultra-gentle on reactive skin",
+      "Balances pH without stripping",
+      "Reduces redness and irritation",
+      "Light herbal scent",
+      "Pump dispenser for hygiene",
+    ],
+    cons: [
+      "Low lather may feel insufficient",
+      "Not ideal for heavy makeup removal",
+      "Bottle size runs small",
+    ],
+    amazonUrl: "https://www.amazon.com/ANUA-Heartleaf-Cleansing-Cleanser-Blackheads/dp/",
+    overallScore: 4.7,
+    effectiveness: 4.8,
+    value: 4.7,
+    packaging: 4.6,
+    skinType: ["Sensitive skin", "Acne-prone skin", "Combination skin"],
+    howToUse:
+      "Dispense into hands, lather with water, and massage onto face. Rinse thoroughly. Use AM/PM as first cleanse.",
+    reviewText: `As someone with sensitive, acne-prone skin, finding a cleanser that cleans without causing breakouts has been challenging - until this ANUA Heartleaf Cleanser. The 77% heartleaf extract is a soothing powerhouse, calming redness and preventing the tightness I get from harsher formulas.
+
+It lathers minimally, which initially threw me off, but it effectively removes daily grime and light makeup while maintaining my skin's moisture barrier. My blackheads have diminished noticeably after a month, and flare-ups are rarer. The pH-balanced formula leaves my skin feeling clean yet balanced, not stripped.
+
+The pump bottle is travel-friendly and hygienic, with a fresh, herbal scent that's subtle and non-overpowering. For the price, this is a gentle workhorse that punches above its weight in calming irritated skin. I've repurchased and recommended it to all my reactive-skin friends.`,
+  },
+  "urban-decay-naked-eyeshadow-palette": {
+    slug: "urban-decay-naked-eyeshadow-palette",
+    name: "Urban Decay Naked Eyeshadow Palette",
     category: "Makeup",
     price: "$54.99",
     originalPrice: null,
     rating: 4.8,
     reviews: 278,
-    images: ["/neutral-eyeshadow-palette.jpg", "/placeholder.svg?key=palette2", "/placeholder.svg?key=palette3"],
-    description:
-      "A versatile 12-shade eyeshadow palette featuring buttery mattes and shimmering metallics in universally flattering neutral tones.",
-    ingredients: ["Mica", "Talc", "Vitamin E", "Jojoba Oil", "Mineral Pigments"],
-    pros: [
-      "Highly pigmented and blendable",
-      "Mix of matte and shimmer finishes",
-      "Minimal fallout",
-      "Long-lasting wear",
-      "Suitable for all skin tones",
+    images: [
+      "https://m.media-amazon.com/images/I/716d48S0WBL._SX522_.jpg",
+      "https://m.media-amazon.com/images/I/716d48S0WBL._SX522_.jpg",
+      "https://m.media-amazon.com/images/I/716d48S0WBL._SX522_.jpg",
     ],
-    cons: ["Mirror could be larger", "No brush included", "Some shimmers need primer for best results"],
-    amazonUrl: "https://amazon.com/dp/B08EYESHADOW",
-    overallScore: 4.8,
-    effectiveness: 4.9,
-    value: 4.7,
-    packaging: 4.6,
-    skinType: ["All skin tones", "All eye types"],
-    howToUse:
-      "Apply with eyeshadow brushes. Use mattes for crease and transition shades, shimmers on the lid. Can be used wet for more intense color payoff.",
-    reviewText: `This neutral eyeshadow palette has become my daily go-to for creating everything from natural daytime looks to dramatic evening eyes. The 12 shades are thoughtfully curated, ranging from light creams to deep browns, with a perfect balance of matte and shimmer finishes.
-
-The formula is buttery smooth and incredibly pigmented. The shadows blend effortlessly without patchiness or muddiness, making it easy to create seamless transitions. I'm particularly impressed by the shimmer shades - they're reflective and dimensional without being chunky or glittery.
-
-Wear time is excellent, lasting 10+ hours without creasing when used with an eyeshadow primer. There's minimal fallout during application, which is a huge plus. The palette's compact size makes it perfect for travel, though I wish the mirror was slightly larger for easier application on the go.`,
-  },
-  "retinol-anti-aging-cream": {
-    slug: "retinol-anti-aging-cream",
-    name: "Retinol Anti-Aging Cream",
-    category: "Skincare",
-    price: "$78.99",
-    originalPrice: null,
-    rating: 4.9,
-    reviews: 167,
-    images: ["/retinol-cream-jar.jpg", "/placeholder.svg?key=retinol2", "/placeholder.svg?key=retinol3"],
     description:
-      "An advanced anti-aging cream with encapsulated retinol that minimizes fine lines, improves skin texture, and promotes a youthful, radiant complexion.",
-    ingredients: ["Encapsulated Retinol", "Peptides", "Hyaluronic Acid", "Vitamin C", "Niacinamide"],
+      "Iconic neutral eyeshadow palette with 12 versatile shades for everyday and dramatic looks, featuring velvety mattes and subtle shimmers.",
+    ingredients: ["Talc", "Mica", "Dimethicone", "Ethylhexyl Palmitate", "Mineral Pigments"],
     pros: [
-      "Visible reduction in fine lines",
-      "Gentle encapsulated retinol formula",
-      "Improves skin texture and tone",
-      "Minimal irritation",
-      "Luxurious, non-greasy texture",
-    ],
-    cons: ["Premium price point", "Requires consistent use for results", "Must use SPF during the day"],
-    amazonUrl: "https://amazon.com/dp/B08RETINOL",
-    overallScore: 4.9,
-    effectiveness: 5.0,
-    value: 4.5,
-    packaging: 4.8,
-    skinType: ["All skin types", "Mature skin", "Anti-aging concerns"],
-    howToUse:
-      "Apply a pea-sized amount to clean, dry skin in the evening. Start with 2-3 times per week and gradually increase frequency. Always use SPF during the day.",
-    reviewText: `This retinol cream has exceeded all my expectations for an anti-aging product. The encapsulated retinol technology delivers powerful results without the irritation typically associated with retinol products.
-
-After 12 weeks of consistent use, I've seen a dramatic improvement in my skin. Fine lines around my eyes and forehead have noticeably diminished, my skin texture is smoother, and my complexion looks more even and radiant. The cream has a luxurious, silky texture that absorbs quickly without any greasiness.
-
-What sets this apart from other retinol products is how gentle it is. I experienced no peeling, redness, or sensitivity, even when I increased to nightly use. The addition of hyaluronic acid and peptides provides extra hydration and anti-aging benefits.`,
-  },
-  "hyaluronic-acid-moisturizer": {
-    slug: "hyaluronic-acid-moisturizer",
-    name: "Hyaluronic Acid Moisturizer",
-    category: "Skincare",
-    price: "$49.99",
-    originalPrice: null,
-    rating: 4.8,
-    reviews: 345,
-    images: ["/hyaluronic-acid-moisturizer.jpg", "/placeholder.svg?key=ha2", "/placeholder.svg?key=ha3"],
-    description:
-      "An ultra-hydrating moisturizer with multiple molecular weights of hyaluronic acid that plumps, smooths, and deeply hydrates all skin layers.",
-    ingredients: ["Multi-Weight Hyaluronic Acid", "Ceramides", "Vitamin B5", "Glycerin", "Squalane"],
-    pros: [
-      "Intense hydration without heaviness",
-      "Plumps fine lines immediately",
-      "Suitable for all skin types",
-      "Layers well under makeup",
-      "Fragrance-free formula",
+      "Buttery, blendable formula",
+      "No fallout or creasing",
+      "Versatile neutral shades",
+      "Mirror included for portability",
+      "Long-lasting pigmentation",
     ],
     cons: [
-      "May need additional moisturizer in very dry climates",
-      "Pump dispenser can be finicky",
-      "Price is moderate for the size",
+      "Some shades similar in tone",
+      "Shimmers need primer",
+      "Compact but bulky for travel",
     ],
-    amazonUrl: "https://amazon.com/dp/B08HYALURONIC",
+    amazonUrl: "https://www.amazon.com/URBAN-DECAY-Eyeshadow-Everyday-Cruelty-free/dp/",
+    overallScore: 4.8,
+    effectiveness: 4.9,
+    value: 4.7,
+    packaging: 4.8,
+    skinType: ["All skin tones", "All eye types"],
+    howToUse:
+      "Prime lids first. Use a fluffy brush for blending mattes in crease; pack shimmers on lid with finger. Set with primer for longevity.",
+    reviewText: `The Urban Decay Naked Palette lives up to its legendary status - it's the ultimate neutral collection for effortless eye looks. The 12 shades strike a perfect balance of everyday taupes and smokier browns, with mattes that blend like butter and shimmers that catch light beautifully without glitter bombs.
+
+Pigmentation is spot-on: one swipe shows true color, and blending is seamless, even for beginners. I've worn these shades through 10-hour days with minimal fade, thanks to the primer-infused formula. No fallout means clean application every time.
+
+The sturdy case with full mirror is a bonus for on-the-go touch-ups, though it's not the slimmest for purses. At this price, it's an investment that replaces multiple singles. If you want one palette to rule them all, this is it - my kit's MVP for years.`,
+  },
+  "loreal-paris-revitalift-moisturizer": {
+    slug: "loreal-paris-revitalift-moisturizer",
+    name: "L'Oreal Paris Revitalift Anti-Aging Moisturizer",
+    category: "Skincare",
+    price: "$24.99",
+    originalPrice: "$29.99",
+    rating: 4.9,
+    reviews: 167,
+    images: [
+      "https://m.media-amazon.com/images/I/81tTgiDDyWL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81tTgiDDyWL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81tTgiDDyWL._SX679_.jpg",
+    ],
+    description:
+      "Hyaluronic acid moisturizer that hydrates deeply and smooths fine lines for firmer skin with pro-retinol for gentle renewal.",
+    ingredients: ["Hyaluronic Acid", "Pro-Retinol", "Vitamin C", "Glycerin", "Shea Butter"],
+    pros: [
+      "Affordable anti-aging powerhouse",
+      "Instant plumping hydration",
+      "Reduces wrinkles over time",
+      "Lightweight daily use",
+      "Wide availability",
+    ],
+    cons: [
+      "Scent may be strong for some",
+      "Jar less sanitary than pump",
+      "Milder results for deep lines",
+    ],
+    amazonUrl: "https://www.amazon.com/LOreal-Paris-Moisturizer-Revitalift-Anti-Aging/dp/",
+    overallScore: 4.9,
+    effectiveness: 4.9,
+    value: 5.0,
+    packaging: 4.5,
+    skinType: ["All skin types", "Aging skin", "Dry skin"],
+    howToUse:
+      "Apply generously to face and neck after cleansing. Use morning and night. Pair with SPF during day.",
+    reviewText: `L'Oreal's Revitalift has been my secret weapon against aging on a budget - it delivers spa-like results without the spa price. The hyaluronic acid quenches thirst instantly, while pro-retinol works overnight to smooth texture and firm.
+
+After two months, fine lines around my mouth have softened, and my skin feels bouncier. The cream absorbs fast, no grease, and layers under makeup flawlessly. The subtle fresh scent is invigorating, not overpowering.
+
+The jar is generous-sized and easy to scoop, though a spatula helps with hygiene. For under $25, this rivals luxury creams in hydration and renewal. It's accessible anti-aging at its best - my routine's hero.`,
+  },
+  "thrive-causemetics-liquid-lash-mascara": {
+    slug: "thrive-causemetics-liquid-lash-mascara",
+    name: "Thrive Causemetics Liquid Lash Extensions Mascara",
+    category: "Makeup",
+    price: "$25.00",
+    originalPrice: null,
+    rating: 4.5,
+    reviews: 523,
+    images: [
+      "https://m.media-amazon.com/images/I/61XEyq3FZ3L._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61XEyq3FZ3L._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61XEyq3FZ3L._SX679_.jpg",
+    ],
+    description:
+      "Vegan, lengthening mascara that adds volume and definition without flaking or smudging, infused with orchid stem cell for lash conditioning.",
+    ingredients: ["Orchid Stem Cell Complex", "Beeswax Alternative", "Vitamin B5", "Shea Butter", "Carnauba Wax"],
+    pros: [
+      "Dramatic length and separation",
+      "Buildable without clumps",
+      "Nourishes lashes over time",
+      "Smudge-proof formula",
+      "Clean, vegan ingredients",
+    ],
+    cons: [
+      "Wand may be too curved for some",
+      "Dries down fast",
+      "Average volume boost",
+    ],
+    amazonUrl: "https://www.amazon.com/Thrive-Causemetics-Extensions-Lengthening-Volumizing/dp/",
+    overallScore: 4.5,
+    effectiveness: 4.6,
+    value: 4.5,
+    packaging: 4.7,
+    skinType: ["All eye types", "Sensitive eyes"],
+    howToUse:
+      "Curl lashes. Apply from root to tip with zigzag motion. Build layers. Remove with warm water.",
+    reviewText: `Thrive's Liquid Lash Mascara gives falsies-without-the-fuss vibes with its tubing technology that slides off with warm water - genius for sensitive eyes. The orchid stem cells condition while the formula lengthens dramatically, fanning lashes beautifully.
+
+One coat separates and defines; two add intensity without clumps. It withstands humidity and tears, no smudges. Lashes feel healthier after weeks, less brittle.
+
+The curved wand grabs every lash, though hood-eyed folks might trim it. Packaging is sleek, eco-conscious. At $25, it's premium clean beauty that performs - my lash game's elevated.`,
+  },
+  "medicube-triple-collagen-cream": {
+    slug: "medicube-triple-collagen-cream",
+    name: "Medicube Triple Collagen Cream Moisturizer",
+    category: "Skincare",
+    price: "$49.99",
+    originalPrice: "$59.99",
+    rating: 4.8,
+    reviews: 345,
+    images: [
+      "https://m.media-amazon.com/images/I/61qcv-tUtDL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61qcv-tUtDL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61qcv-tUtDL._SX679_.jpg",
+    ],
+    description:
+      "Multi-collagen formula that boosts elasticity and provides intense overnight hydration with low-molecular collagen for deep penetration.",
+    ingredients: ["Triple Collagen Complex", "Ceramides", "Peptides", "Hyaluronic Acid", "Niacinamide"],
+    pros: [
+      "Deeply penetrates for firming",
+      "Overnight glow-up effect",
+      "Barrier-strengthening",
+      "Silky, non-sticky feel",
+      "Visible elasticity boost",
+    ],
+    cons: [
+      "Rich texture for oily skin",
+      "Jar hygiene concerns",
+      "Subtle scent lingers",
+    ],
+    amazonUrl: "https://www.amazon.com/Medicube-Triple-Collagen-Cream-Moisturizer/dp/",
     overallScore: 4.8,
     effectiveness: 4.9,
     value: 4.7,
     packaging: 4.6,
-    skinType: ["All skin types", "Dehydrated skin", "Combination skin"],
+    skinType: ["Dry skin", "Mature skin", "Dull skin"],
     howToUse:
-      "Apply to damp skin morning and evening after cleansing. Follow with a facial oil or occlusive moisturizer to seal in hydration.",
-    reviewText: `This hyaluronic acid moisturizer has become an essential step in my skincare routine. The formula contains multiple molecular weights of HA, which means it hydrates at different skin depths for comprehensive moisture.
+      "Apply as last step PM routine. Massage upward. Use pea-size amount; pair with device for absorption.",
+    reviewText: `Medicube's Triple Collagen Cream is a night-time indulgence that pays off come morning. The low-molecular collagens sink in deep, firming and plumping while ceramides lock in moisture for supple skin.
 
-The texture is gel-like and incredibly lightweight, yet it provides serious hydration. I love that it absorbs instantly without any sticky residue, making it perfect for layering under makeup or other skincare products. My skin feels plump, smooth, and bouncy after application.
+Waking to dewier, bouncier complexion after a month - pores refined, lines softened. Texture's rich yet absorbs fully, no pillow grease. Subtle glow rivals gua sha.
 
-I've noticed a visible improvement in my skin's hydration levels and overall appearance. Fine lines look less pronounced, and my skin has a healthy, dewy glow. The fragrance-free formula is gentle enough for my sensitive skin and hasn't caused any irritation.`,
+Glass jar's elegant but use spatula. Scent's clean, fades fast. Worth every penny for that collagen cocktail - my skin's elasticity game-changer.`,
   },
-  "foundation-full-coverage": {
-    slug: "foundation-full-coverage",
-    name: "Foundation - Full Coverage",
+  "bare-minerals-original-liquid-foundation": {
+    slug: "bare-minerals-original-liquid-foundation",
+    name: "Bare Minerals Original Liquid Mineral Foundation",
     category: "Makeup",
     price: "$42.99",
-    originalPrice: null,
+    originalPrice: "$49.99",
     rating: 4.7,
     reviews: 289,
     images: [
-      "/full-coverage-foundation-bottle.jpg",
-      "/placeholder.svg?key=foundation2",
-      "/placeholder.svg?key=foundation3",
+      "https://m.media-amazon.com/images/I/81724OgyQ6L._SX522_.jpg",
+      "https://m.media-amazon.com/images/I/81724OgyQ6L._SX522_.jpg",
+      "https://m.media-amazon.com/images/I/81724OgyQ6L._SX522_.jpg",
     ],
     description:
-      "A buildable, full-coverage foundation available in 20 inclusive shades that provides a flawless, natural-looking finish for up to 16 hours.",
-    ingredients: ["Hyaluronic Acid", "Vitamin E", "SPF 15", "Mineral Pigments", "Silica"],
+      "Medium-coverage, breathable foundation with mineral-based formula for a natural, flawless finish infused with skincare benefits.",
+    ingredients: ["Titanium Dioxide", "Zinc Oxide", "Hyaluronic Acid", "Vitamin E", "Aloe Vera"],
     pros: [
-      "Excellent coverage that's buildable",
-      "Long-lasting 16-hour wear",
-      "20 inclusive shade range",
-      "Natural, skin-like finish",
-      "Contains skincare ingredients",
+      "Buildable, skin-like coverage",
+      "Breathable all-day wear",
+      "Skincare-infused minerals",
+      "No oxidation issues",
+      "30-shade inclusive range",
     ],
     cons: [
-      "May oxidize slightly on oily skin",
-      "Requires setting powder for very oily skin",
-      "Pump dispenser can dispense too much product",
+      "Sheer for full coverage needs",
+      "Pump dispenses generously",
+      "Matte finish requires glow add",
     ],
-    amazonUrl: "https://amazon.com/dp/B08FOUNDATION",
+    amazonUrl: "https://www.amazon.com/Bare-Minerals-Original-Foundation-Medium/dp/",
     overallScore: 4.7,
     effectiveness: 4.8,
     value: 4.6,
-    packaging: 4.5,
-    skinType: ["All skin types", "All skin tones"],
+    packaging: 4.7,
+    skinType: ["All skin types", "Sensitive skin", "Acne-prone"],
     howToUse:
-      "Shake well before use. Apply with a brush, sponge, or fingers, building coverage as needed. Set with powder for extended wear.",
-    reviewText: `This full-coverage foundation has become my holy grail for achieving a flawless complexion. The formula is incredibly versatile - you can sheer it out for a natural look or build it up for full coverage that still looks like skin.
+      "Shake well. Apply with brush/sponge for sheer; fingers for buildable. Set lightly if oily.",
+    reviewText: `Bare Minerals' Liquid Foundation redefined 'no-makeup makeup' for me - medium coverage that evens without masking. Minerals like titanium dioxide blur imperfections naturally, while hyaluronic plumps.
 
-The shade range is impressive with 20 options that cater to a wide variety of undertones. I appreciate that the foundation contains skincare ingredients like hyaluronic acid and vitamin E, so it doesn't feel drying throughout the day. The finish is natural and skin-like, never cakey or mask-like.
+Lasts 8-10 hours, breathable sans caking. Shades match truly, no orange shift. Feels like skincare, not paint - my sensitive skin's dream.
 
-Wear time is outstanding - this foundation truly lasts 16 hours without significant fading or breaking down. It photographs beautifully with no flashback, making it perfect for special events. The formula works well on my combination skin, though those with very oily skin may want to use a mattifying primer and setting powder.`,
+Dropper bottle's precise, recyclable. At $43, it's premium natural coverage. Everyday essential for that fresh-faced vibe.`,
   },
 }
 
