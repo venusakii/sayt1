@@ -265,8 +265,7 @@ export default function ReviewsPage() {
 
                     <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{product.description}</p>
 
-                    <div className="flex items-center justify-between">
-                      <span className="font-bold text-xl text-primary">{product.price}</span>
+                    <div className="flex items-center justify-end">
                       <Button size="sm" asChild>
                         <Link href={`/reviews/${product.slug}`}>Read Review</Link>
                       </Button>

@@ -12,8 +12,8 @@ import { notFound } from "next/navigation"
 
 // Mock data - in a real app, this would come from a database
 const products = {
-  "1": {
-    slug: "1",
+  "vitamin-c-brightening-serum": {
+    slug: "vitamin-c-brightening-serum",
     name: "Vitamin C Brightening Serum",
     category: "Skincare",
     price: "$45.99",
@@ -188,6 +188,319 @@ The packaging deserves special mention - the clear tube with rose gold cap feels
 
 At $22, it's pricier than drugstore alternatives, but the quality justifies the cost. A little goes a long way, and I've been using mine daily for three months with plenty left. This has become my signature lip product and I've already repurchased in multiple shades.`,
   },
+  "waterproof-mascara": {
+    slug: "waterproof-mascara",
+    name: "Waterproof Mascara - Volume & Length",
+    category: "Makeup",
+    price: "$24.99",
+    originalPrice: "$32.99",
+    rating: 4.5,
+    reviews: 523,
+    images: ["/waterproof-mascara-tube.jpg", "/mascara-wand-closeup.jpg", "/mascara-application-on-lashes.jpg"],
+    description:
+      "A high-performance waterproof mascara that delivers dramatic volume and length while staying smudge-proof and flake-free all day long.",
+    ingredients: ["Beeswax", "Carnauba Wax", "Panthenol (Pro-Vitamin B5)", "Vitamin E", "Nylon Fibers"],
+    pros: [
+      "Truly waterproof - survives swimming and tears",
+      "Dramatic volume and length without clumping",
+      "Stays put for 12+ hours",
+      "Easy to remove with oil-based cleanser",
+      "Curved brush reaches every lash",
+    ],
+    cons: [
+      "Requires oil-based makeup remover",
+      "Can be slightly difficult to build up layers",
+      "Wand may be too large for short lashes",
+      "Dries quickly in the tube",
+    ],
+    amazonUrl: "https://amazon.com/dp/B08EXAMPLE",
+    overallScore: 4.5,
+    effectiveness: 4.7,
+    value: 4.6,
+    packaging: 4.2,
+    skinType: ["All eye types", "Sensitive eyes", "Contact lens wearers"],
+    howToUse:
+      "Start at the base of lashes and wiggle the wand upward in a zigzag motion. Apply 2-3 coats for maximum volume. Remove with an oil-based makeup remover or cleansing balm.",
+    reviewText: `After putting this waterproof mascara through rigorous testing - including a beach vacation, multiple workouts, and even a few emotional movie nights - I can confidently say it lives up to its waterproof claims. This mascara truly doesn't budge once it sets.
+
+The formula is buildable and creates impressive volume and length without the dreaded spider lashes effect. The curved brush design is excellent for reaching corner lashes and lower lashes, though those with very short lashes might find it slightly oversized. The bristles are densely packed, which helps separate lashes while depositing plenty of product.
+
+What impressed me most is how this mascara maintains its integrity throughout the day. After 12 hours of wear, including a sweaty gym session, my lashes still looked freshly applied with no flaking, smudging, or raccoon eyes. The waterproof formula is seriously impressive - I tested it in the pool and it didn't budge at all.
+
+The removal process does require an oil-based cleanser or makeup remover, which is standard for waterproof formulas. I found that a cleansing balm works best, melting the mascara away without excessive rubbing. Regular water-based cleansers won't cut it, so be prepared to invest in a good makeup remover.
+
+One minor drawback is that the formula can dry out faster than regular mascaras, so make sure to close the tube tightly after each use. I've been using mine for two months and it's still performing well, but I've noticed it's slightly less wet than when I first opened it.
+
+At $24.99, this is reasonably priced for a high-quality waterproof mascara. It's perfect for anyone who needs their makeup to last through challenging conditions - whether that's humidity, exercise, or emotional moments. This has become my go-to mascara for special occasions and active days.`,
+  },
+  "matte-liquid-lipstick-set": {
+    slug: "matte-liquid-lipstick-set",
+    name: "Matte Liquid Lipstick Set",
+    category: "Makeup",
+    price: "$29.99",
+    originalPrice: "$39.99",
+    rating: 4.6,
+    reviews: 456,
+    images: ["/matte- lipstick-set.jpg", "/placeholder.svg?key= lipstick2", "/placeholder.svg?key= lipstick3"],
+    description:
+      "A collection of 6 highly pigmented, long-lasting liquid lipsticks in stunning matte shades that stay put all day without drying out your lips.",
+    ingredients: ["Vitamin E", "Jojoba Oil", "Shea Butter", "Mineral Pigments", "Beeswax"],
+    pros: [
+      "Excellent color payoff with one swipe",
+      "Comfortable matte finish that doesn't crack",
+      "Long-lasting formula (8+ hours)",
+      "Great shade variety in one set",
+      "Affordable price for 6 lipsticks",
+    ],
+    cons: [
+      "Can be slightly drying after extended wear",
+      "Requires lip liner for precise application",
+      "Some shades may settle into lip lines",
+    ],
+    amazonUrl: "https://amazon.com/dp/B08LIPSTICK",
+    overallScore: 4.6,
+    effectiveness: 4.7,
+    value: 4.8,
+    packaging: 4.3,
+    skinType: ["All lip types", "Best with lip prep"],
+    howToUse:
+      "Exfoliate and moisturize lips before application. Apply from the center of lips outward using the precision applicator. Allow to dry for 30 seconds for best results.",
+    reviewText: `This matte liquid lipstick set has become my go-to for everyday wear and special occasions alike. The set includes 6 versatile shades ranging from nude to bold red, making it perfect for any look or mood.
+
+The formula is impressively pigmented - one swipe delivers full, opaque color that looks professional and polished. Unlike many matte lipsticks that feel like they're sucking the life out of your lips, this formula contains moisturizing ingredients like jojoba oil and shea butter that keep lips comfortable throughout the day.
+
+I've tested the wear time extensively, and these lipsticks truly last 8+ hours with minimal fading. They survive coffee, meals, and even light snacking without completely disappearing. There is some transfer onto cups, but the color remains vibrant on the lips.
+
+The applicator is precise and makes application easy, though I do recommend using a lip liner for the boldest shades to prevent any feathering. The packaging is sleek and compact, making it easy to carry multiple shades in your makeup bag.
+
+At $29.99 for 6 full-sized lipsticks, this set offers incredible value. Each shade is wearable and flattering, with no duds in the collection.`,
+  },
+  "hydrating-night-cream": {
+    slug: "hydrating-night-cream",
+    name: "Hydrating Night Cream",
+    category: "Skincare",
+    price: "$62.99",
+    originalPrice: "$79.99",
+    rating: 4.9,
+    reviews: 189,
+    images: ["/luxury-night-cream-jar.jpg", "/placeholder.svg?key=cream2", "/placeholder.svg?key=cream3"],
+    description:
+      "A rich, luxurious night cream that works while you sleep to deeply hydrate, repair, and rejuvenate your skin with powerful anti-aging ingredients.",
+    ingredients: ["Retinol", "Peptides", "Hyaluronic Acid", "Squalane", "Niacinamide", "Ceramides"],
+    pros: [
+      "Deeply hydrating without feeling heavy",
+      "Visible improvement in skin texture",
+      "Reduces fine lines and wrinkles",
+      "Luxurious texture and scent",
+      "Wake up with plump, glowing skin",
+    ],
+    cons: [
+      "Higher price point",
+      "May be too rich for oily skin types",
+      "Contains retinol (not suitable for pregnancy)",
+    ],
+    amazonUrl: "https://amazon.com/dp/B08NIGHTCREAM",
+    overallScore: 4.9,
+    effectiveness: 4.9,
+    value: 4.5,
+    packaging: 4.8,
+    skinType: ["Dry skin", "Mature skin", "Normal skin"],
+    howToUse:
+      "Apply to clean, dry skin every evening. Gently massage into face and neck using upward motions. Allow to absorb fully before sleeping. Use SPF during the day as this product contains retinol.",
+    reviewText: `This hydrating night cream has transformed my nighttime skincare routine into a luxurious self-care ritual. The texture is rich and creamy, yet it absorbs beautifully without leaving a greasy residue on my pillowcase.
+
+The ingredient list reads like a skincare dream team - retinol for cell turnover, peptides for firmness, hyaluronic acid for hydration, and ceramides for barrier repair. After 8 weeks of consistent use, I've noticed a significant improvement in my skin's texture and tone. Fine lines around my eyes have softened, and my skin looks noticeably more radiant.
+
+What I love most is waking up with plump, hydrated skin that looks refreshed and glowing. The cream has a subtle, sophisticated scent that makes the application experience feel spa-like. The jar packaging is elegant and substantial, though I do wish it came with a spatula for more hygienic application.
+
+At $62.99, this is definitely an investment piece in your skincare routine, but the results justify the price. A little goes a long way, and the jar has lasted me nearly 3 months with nightly use.`,
+  },
+  "gentle-cleansing-oil": {
+    slug: "gentle-cleansing-oil",
+    name: "Gentle Cleansing Oil",
+    category: "Skincare",
+    price: "$38.99",
+    originalPrice: null,
+    rating: 4.7,
+    reviews: 312,
+    images: ["/cleansing-oil-bottle.jpg", "/placeholder.svg?key=oil2", "/placeholder.svg?key=oil3"],
+    description:
+      "A lightweight cleansing oil that effortlessly melts away makeup, sunscreen, and impurities while nourishing your skin with botanical oils.",
+    ingredients: ["Jojoba Oil", "Grapeseed Oil", "Vitamin E", "Chamomile Extract", "Green Tea Extract"],
+    pros: [
+      "Removes waterproof makeup effortlessly",
+      "Doesn't leave oily residue",
+      "Gentle on sensitive skin",
+      "Emulsifies beautifully with water",
+      "Pleasant natural scent",
+    ],
+    cons: [
+      "May require double cleansing for very oily skin",
+      "Bottle design makes it hard to control amount",
+      "Can be slippery to handle in shower",
+    ],
+    amazonUrl: "https://amazon.com/dp/B08CLEANSINGOIL",
+    overallScore: 4.7,
+    effectiveness: 4.8,
+    value: 4.6,
+    packaging: 4.4,
+    skinType: ["All skin types", "Dry skin", "Sensitive skin"],
+    howToUse:
+      "Apply 2-3 pumps to dry skin and massage gently. Add water to emulsify, then rinse thoroughly. Follow with a water-based cleanser if desired.",
+    reviewText: `This cleansing oil has revolutionized my makeup removal routine. It effortlessly dissolves even the most stubborn waterproof mascara and long-wear foundation without any harsh rubbing or tugging on the delicate eye area.
+
+The formula is lightweight and doesn't feel heavy or greasy on the skin. When you add water, it emulsifies into a milky texture that rinses away cleanly, leaving no oily residue behind. My skin feels soft, clean, and nourished - never stripped or tight.
+
+I appreciate that this cleansing oil is formulated with nourishing botanical oils rather than mineral oil. The natural ingredients make it suitable for sensitive skin, and I haven't experienced any irritation or breakouts since incorporating it into my routine.`,
+  },
+  "eyeshadow-palette-neutral-tones": {
+    slug: "eyeshadow-palette-neutral-tones",
+    name: "Eyeshadow Palette - Neutral Tones",
+    category: "Makeup",
+    price: "$54.99",
+    originalPrice: null,
+    rating: 4.8,
+    reviews: 278,
+    images: ["/neutral-eyeshadow-palette.jpg", "/placeholder.svg?key=palette2", "/placeholder.svg?key=palette3"],
+    description:
+      "A versatile 12-shade eyeshadow palette featuring buttery mattes and shimmering metallics in universally flattering neutral tones.",
+    ingredients: ["Mica", "Talc", "Vitamin E", "Jojoba Oil", "Mineral Pigments"],
+    pros: [
+      "Highly pigmented and blendable",
+      "Mix of matte and shimmer finishes",
+      "Minimal fallout",
+      "Long-lasting wear",
+      "Suitable for all skin tones",
+    ],
+    cons: ["Mirror could be larger", "No brush included", "Some shimmers need primer for best results"],
+    amazonUrl: "https://amazon.com/dp/B08EYESHADOW",
+    overallScore: 4.8,
+    effectiveness: 4.9,
+    value: 4.7,
+    packaging: 4.6,
+    skinType: ["All skin tones", "All eye types"],
+    howToUse:
+      "Apply with eyeshadow brushes. Use mattes for crease and transition shades, shimmers on the lid. Can be used wet for more intense color payoff.",
+    reviewText: `This neutral eyeshadow palette has become my daily go-to for creating everything from natural daytime looks to dramatic evening eyes. The 12 shades are thoughtfully curated, ranging from light creams to deep browns, with a perfect balance of matte and shimmer finishes.
+
+The formula is buttery smooth and incredibly pigmented. The shadows blend effortlessly without patchiness or muddiness, making it easy to create seamless transitions. I'm particularly impressed by the shimmer shades - they're reflective and dimensional without being chunky or glittery.
+
+Wear time is excellent, lasting 10+ hours without creasing when used with an eyeshadow primer. There's minimal fallout during application, which is a huge plus. The palette's compact size makes it perfect for travel, though I wish the mirror was slightly larger for easier application on the go.`,
+  },
+  "retinol-anti-aging-cream": {
+    slug: "retinol-anti-aging-cream",
+    name: "Retinol Anti-Aging Cream",
+    category: "Skincare",
+    price: "$78.99",
+    originalPrice: null,
+    rating: 4.9,
+    reviews: 167,
+    images: ["/retinol-cream-jar.jpg", "/placeholder.svg?key=retinol2", "/placeholder.svg?key=retinol3"],
+    description:
+      "An advanced anti-aging cream with encapsulated retinol that minimizes fine lines, improves skin texture, and promotes a youthful, radiant complexion.",
+    ingredients: ["Encapsulated Retinol", "Peptides", "Hyaluronic Acid", "Vitamin C", "Niacinamide"],
+    pros: [
+      "Visible reduction in fine lines",
+      "Gentle encapsulated retinol formula",
+      "Improves skin texture and tone",
+      "Minimal irritation",
+      "Luxurious, non-greasy texture",
+    ],
+    cons: ["Premium price point", "Requires consistent use for results", "Must use SPF during the day"],
+    amazonUrl: "https://amazon.com/dp/B08RETINOL",
+    overallScore: 4.9,
+    effectiveness: 5.0,
+    value: 4.5,
+    packaging: 4.8,
+    skinType: ["All skin types", "Mature skin", "Anti-aging concerns"],
+    howToUse:
+      "Apply a pea-sized amount to clean, dry skin in the evening. Start with 2-3 times per week and gradually increase frequency. Always use SPF during the day.",
+    reviewText: `This retinol cream has exceeded all my expectations for an anti-aging product. The encapsulated retinol technology delivers powerful results without the irritation typically associated with retinol products.
+
+After 12 weeks of consistent use, I've seen a dramatic improvement in my skin. Fine lines around my eyes and forehead have noticeably diminished, my skin texture is smoother, and my complexion looks more even and radiant. The cream has a luxurious, silky texture that absorbs quickly without any greasiness.
+
+What sets this apart from other retinol products is how gentle it is. I experienced no peeling, redness, or sensitivity, even when I increased to nightly use. The addition of hyaluronic acid and peptides provides extra hydration and anti-aging benefits.`,
+  },
+  "hyaluronic-acid-moisturizer": {
+    slug: "hyaluronic-acid-moisturizer",
+    name: "Hyaluronic Acid Moisturizer",
+    category: "Skincare",
+    price: "$49.99",
+    originalPrice: null,
+    rating: 4.8,
+    reviews: 345,
+    images: ["/hyaluronic-acid-moisturizer.jpg", "/placeholder.svg?key=ha2", "/placeholder.svg?key=ha3"],
+    description:
+      "An ultra-hydrating moisturizer with multiple molecular weights of hyaluronic acid that plumps, smooths, and deeply hydrates all skin layers.",
+    ingredients: ["Multi-Weight Hyaluronic Acid", "Ceramides", "Vitamin B5", "Glycerin", "Squalane"],
+    pros: [
+      "Intense hydration without heaviness",
+      "Plumps fine lines immediately",
+      "Suitable for all skin types",
+      "Layers well under makeup",
+      "Fragrance-free formula",
+    ],
+    cons: [
+      "May need additional moisturizer in very dry climates",
+      "Pump dispenser can be finicky",
+      "Price is moderate for the size",
+    ],
+    amazonUrl: "https://amazon.com/dp/B08HYALURONIC",
+    overallScore: 4.8,
+    effectiveness: 4.9,
+    value: 4.7,
+    packaging: 4.6,
+    skinType: ["All skin types", "Dehydrated skin", "Combination skin"],
+    howToUse:
+      "Apply to damp skin morning and evening after cleansing. Follow with a facial oil or occlusive moisturizer to seal in hydration.",
+    reviewText: `This hyaluronic acid moisturizer has become an essential step in my skincare routine. The formula contains multiple molecular weights of HA, which means it hydrates at different skin depths for comprehensive moisture.
+
+The texture is gel-like and incredibly lightweight, yet it provides serious hydration. I love that it absorbs instantly without any sticky residue, making it perfect for layering under makeup or other skincare products. My skin feels plump, smooth, and bouncy after application.
+
+I've noticed a visible improvement in my skin's hydration levels and overall appearance. Fine lines look less pronounced, and my skin has a healthy, dewy glow. The fragrance-free formula is gentle enough for my sensitive skin and hasn't caused any irritation.`,
+  },
+  "foundation-full-coverage": {
+    slug: "foundation-full-coverage",
+    name: "Foundation - Full Coverage",
+    category: "Makeup",
+    price: "$42.99",
+    originalPrice: null,
+    rating: 4.7,
+    reviews: 289,
+    images: [
+      "/full-coverage-foundation-bottle.jpg",
+      "/placeholder.svg?key=foundation2",
+      "/placeholder.svg?key=foundation3",
+    ],
+    description:
+      "A buildable, full-coverage foundation available in 20 inclusive shades that provides a flawless, natural-looking finish for up to 16 hours.",
+    ingredients: ["Hyaluronic Acid", "Vitamin E", "SPF 15", "Mineral Pigments", "Silica"],
+    pros: [
+      "Excellent coverage that's buildable",
+      "Long-lasting 16-hour wear",
+      "20 inclusive shade range",
+      "Natural, skin-like finish",
+      "Contains skincare ingredients",
+    ],
+    cons: [
+      "May oxidize slightly on oily skin",
+      "Requires setting powder for very oily skin",
+      "Pump dispenser can dispense too much product",
+    ],
+    amazonUrl: "https://amazon.com/dp/B08FOUNDATION",
+    overallScore: 4.7,
+    effectiveness: 4.8,
+    value: 4.6,
+    packaging: 4.5,
+    skinType: ["All skin types", "All skin tones"],
+    howToUse:
+      "Shake well before use. Apply with a brush, sponge, or fingers, building coverage as needed. Set with powder for extended wear.",
+    reviewText: `This full-coverage foundation has become my holy grail for achieving a flawless complexion. The formula is incredibly versatile - you can sheer it out for a natural look or build it up for full coverage that still looks like skin.
+
+The shade range is impressive with 20 options that cater to a wide variety of undertones. I appreciate that the foundation contains skincare ingredients like hyaluronic acid and vitamin E, so it doesn't feel drying throughout the day. The finish is natural and skin-like, never cakey or mask-like.
+
+Wear time is outstanding - this foundation truly lasts 16 hours without significant fading or breaking down. It photographs beautifully with no flashback, making it perfect for special events. The formula works well on my combination skin, though those with very oily skin may want to use a mattifying primer and setting powder.`,
+  },
 }
 
 interface PageProps {
@@ -279,15 +592,6 @@ export default async function ProductReviewPage({ params }: PageProps) {
                 </div>
                 <span className="font-semibold text-lg">{product.rating}</span>
                 <span className="text-muted-foreground">({product.reviews} reviews)</span>
-              </div>
-
-              {/* Price */}
-              <div className="flex items-center space-x-4">
-                <span className="text-3xl font-bold text-primary">{product.price}</span>
-                {product.originalPrice && (
-                  <span className="text-xl text-muted-foreground line-through">{product.originalPrice}</span>
-                )}
-                {product.originalPrice && <Badge variant="destructive">Save 23%</Badge>}
               </div>
 
               {/* Actions */}
@@ -497,7 +801,19 @@ export default async function ProductReviewPage({ params }: PageProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-playfair text-3xl font-bold text-foreground mb-8 text-center">You might also like</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {["cerave-hydrating-cleanser", "the-ordinary-niacinamide", "fenty-beauty-gloss-bomb"].map((relatedId) => {
+            {[
+              "cerave-hydrating-cleanser",
+              "the-ordinary-niacinamide",
+              "fenty-beauty-gloss-bomb",
+              "waterproof-mascara",
+              "matte-liquid-lipstick-set",
+              "hydrating-night-cream",
+              "gentle-cleansing-oil",
+              "eyeshadow-palette-neutral-tones",
+              "retinol-anti-aging-cream",
+              "hyaluronic-acid-moisturizer",
+              "foundation-full-coverage",
+            ].map((relatedId) => {
               const relatedProduct = products[relatedId as keyof typeof products]
               return (
                 <Card key={relatedProduct.slug} className="group cursor-pointer">
