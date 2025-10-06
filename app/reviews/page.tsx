@@ -14,7 +14,7 @@ import { useState } from "react"
 
 const products = [
   {
-    id: 1,
+    slug: "vitamin-c-brightening-serum",
     name: "Vitamin C Brightening Serum",
     category: "Skincare",
     price: "$45.99",
@@ -25,7 +25,7 @@ const products = [
     featured: true,
   },
   {
-    id: 2,
+    slug: "hydrating-night-cream",
     name: "Hydrating Night Cream",
     category: "Skincare",
     price: "$62.99",
@@ -36,7 +36,7 @@ const products = [
     featured: false,
   },
   {
-    id: 3,
+    slug: "matte-liquid-lipstick-set",
     name: "Matte Liquid Lipstick Set",
     category: "Makeup",
     price: "$29.99",
@@ -47,7 +47,7 @@ const products = [
     featured: true,
   },
   {
-    id: 4,
+    slug: "gentle-cleansing-oil",
     name: "Gentle Cleansing Oil",
     category: "Skincare",
     price: "$38.99",
@@ -58,7 +58,7 @@ const products = [
     featured: false,
   },
   {
-    id: 5,
+    slug: "eyeshadow-palette-neutral-tones",
     name: "Eyeshadow Palette - Neutral Tones",
     category: "Makeup",
     price: "$54.99",
@@ -69,7 +69,7 @@ const products = [
     featured: true,
   },
   {
-    id: 6,
+    slug: "retinol-anti-aging-cream",
     name: "Retinol Anti-Aging Cream",
     category: "Skincare",
     price: "$78.99",
@@ -80,7 +80,7 @@ const products = [
     featured: false,
   },
   {
-    id: 7,
+    slug: "waterproof-mascara",
     name: "Waterproof Mascara",
     category: "Makeup",
     price: "$24.99",
@@ -91,7 +91,7 @@ const products = [
     featured: false,
   },
   {
-    id: 8,
+    slug: "hyaluronic-acid-moisturizer",
     name: "Hyaluronic Acid Moisturizer",
     category: "Skincare",
     price: "$49.99",
@@ -102,7 +102,7 @@ const products = [
     featured: true,
   },
   {
-    id: 9,
+    slug: "foundation-full-coverage",
     name: "Foundation - Full Coverage",
     category: "Makeup",
     price: "$42.99",
@@ -232,7 +232,7 @@ export default function ReviewsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredAndSortedProducts.map((product) => (
                 <Card
-                  key={product.id}
+                  key={product.slug}
                   className="group cursor-pointer overflow-hidden hover:shadow-lg transition-shadow"
                 >
                   <div className="relative">
@@ -268,7 +268,7 @@ export default function ReviewsPage() {
                     <div className="flex items-center justify-between">
                       <span className="font-bold text-xl text-primary">{product.price}</span>
                       <Button size="sm" asChild>
-                        <Link href={`/reviews/${product.id}`}>Read Review</Link>
+                        <Link href={`/reviews/${product.slug}`}>Read Review</Link>
                       </Button>
                     </div>
                   </CardContent>

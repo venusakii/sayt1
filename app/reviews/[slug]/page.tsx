@@ -13,7 +13,7 @@ import { notFound } from "next/navigation"
 // Mock data - in a real app, this would come from a database
 const products = {
   "1": {
-    id: 1,
+    slug: "1",
     name: "Vitamin C Brightening Serum",
     category: "Skincare",
     price: "$45.99",
@@ -55,7 +55,7 @@ One thing to note is that this serum can cause a slight tingling sensation when 
 Overall, this is an excellent vitamin C serum that delivers on its promises without breaking the bank. It's become a staple in my morning routine, and I've already repurchased it twice.`,
   },
   "cerave-hydrating-cleanser": {
-    id: "cerave-hydrating-cleanser",
+    slug: "cerave-hydrating-cleanser",
     name: "CeraVe Hydrating Facial Cleanser",
     category: "Skincare",
     price: "$12.99",
@@ -97,7 +97,7 @@ The 12 fl oz pump bottle is practical and hygienic, though I've noticed the pump
 My skin feels noticeably softer and more hydrated since incorporating this cleanser. It's particularly excellent for those with sensitive or dry skin, as it cleanses without disruption to the skin barrier.`,
   },
   "the-ordinary-niacinamide": {
-    id: "the-ordinary-niacinamide",
+    slug: "the-ordinary-niacinamide",
     name: "The Ordinary Niacinamide 10% + Zinc 1%",
     category: "Skincare",
     price: "$7.90",
@@ -140,7 +140,7 @@ I experienced some initial purging during the first three weeks, which is normal
 The packaging is basic but functional, though the small 30ml bottle means frequent repurchasing. For the price point, this is still exceptional value. This serum has earned its place as a holy grail product for oily and acne-prone skin types.`,
   },
   "fenty-beauty-gloss-bomb": {
-    id: "fenty-beauty-gloss-bomb",
+    slug: "fenty-beauty-gloss-bomb",
     name: "Fenty Beauty Gloss Bomb Universal Lip Luminizer",
     category: "Makeup",
     price: "$22.00",
@@ -191,12 +191,12 @@ At $22, it's pricier than drugstore alternatives, but the quality justifies the 
 }
 
 interface PageProps {
-  params: Promise<{ id: string }>
+  params: Promise<{ slug: string }>
 }
 
 export default async function ProductReviewPage({ params }: PageProps) {
-  const { id } = await params
-  const product = products[id as keyof typeof products]
+  const { slug } = await params
+  const product = products[slug as keyof typeof products]
 
   if (!product) {
     notFound()
@@ -500,7 +500,7 @@ export default async function ProductReviewPage({ params }: PageProps) {
             {["cerave-hydrating-cleanser", "the-ordinary-niacinamide", "fenty-beauty-gloss-bomb"].map((relatedId) => {
               const relatedProduct = products[relatedId as keyof typeof products]
               return (
-                <Card key={relatedProduct.id} className="group cursor-pointer">
+                <Card key={relatedProduct.slug} className="group cursor-pointer">
                   <div className="relative overflow-hidden">
                     <img
                       src={relatedProduct.images[0] || "/placeholder.svg"}
@@ -520,7 +520,7 @@ export default async function ProductReviewPage({ params }: PageProps) {
                     <div className="flex items-center justify-between">
                       <span className="font-bold text-xl">{relatedProduct.price}</span>
                       <Button size="sm" asChild>
-                        <Link href={`/reviews/${relatedProduct.id}`}>View Review</Link>
+                        <Link href={`/reviews/${relatedProduct.slug}`}>View Review</Link>
                       </Button>
                     </div>
                   </CardContent>
