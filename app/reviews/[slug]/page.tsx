@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Progress } from "@/components/ui/progress"
 import { Separator } from "@/components/ui/separator"
-import { Star, ShoppingCart, Heart, Share2, CheckCircle, AlertCircle } from "lucide-react"
+import { Star, ShoppingCart, CheckCircle, AlertCircle } from "lucide-react"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 
@@ -35,12 +35,9 @@ const products = {
       "Fast-absorbing, non-greasy texture",
       "Dermatologist-tested formula",
     ],
-    cons: [
-      "May oxidize if not stored properly",
-      "Slight tingling on first use",
-      "Dropper can be messy",
-    ],
-    amazonUrl: "https://www.amazon.com/Roche-Posay-vitamin-renovator-radiance/dp/",
+    cons: ["May oxidize if not stored properly", "Slight tingling on first use", "Dropper can be messy"],
+    amazonUrl:
+      "https://www.amazon.com/s?k=La+Roche-Posay+Vitamin+C+Face+Serum&crid=1ZDFWW23SMX3O&sprefix=la+roche-posay+vitamin+c+face+serum%2Caps%2C888&ref=nb_sb_noss_1",
     overallScore: 4.8,
     effectiveness: 4.9,
     value: 4.7,
@@ -77,12 +74,9 @@ The dark glass bottle with dropper is practical for preserving the vitamin C's p
       "Non-comedogenic formula",
       "Pleasant subtle scent",
     ],
-    cons: [
-      "May pill under certain serums",
-      "Jar packaging less hygienic",
-      "Results take 4-6 weeks",
-    ],
-    amazonUrl: "https://www.amazon.com/Face-Moisturizer-Collagen-Cream-Moisturizing/dp/",
+    cons: ["May pill under certain serums", "Jar packaging less hygienic", "Results take 4-6 weeks"],
+    amazonUrl:
+      "https://www.amazon.com/Face-Moisturizer-Collagen-Cream-Moisturizing/dp/B0BBSP2JNQ/ref=sr_1_1?crid=733K962KVKPT&dib=eyJ2IjoiMSJ9.3NaKYvp5dML77F3uduRlaD3Gm2IaC9THP-rFefF5h9qC-QtRI-15zwLSyCl-X80_ZrZ7HtVs82SiVzqRV3jzRsaX814vrg76E0-fLnlRluqt4rO2-uwwhjhJXrv3qMzp8zbbuS6NaW8dMRaNpjw9ap933GoJCqzLI1EuKphYpHslRhP8y3Fx_iPaPv7TMX7fnAWBmwtpSKKNnwE22gMdRRbCrIVDQweFvQ28Sw2nApVIKEnvasvpPQaw4ySqC-mNhfvhyDYO5jmwWCCB5ba5K5zLFBU_cI0iPYH_Iz1EdAA.ZPY7u2pdC9_jzFtpIRMwgCfk_BUUalWEmGfQi-QHric&dib_tag=se&keywords=Collagen+Face+Moisturizer+Cream&qid=1759824949&sprefix=collagen+face+moisturizer+cream%2Caps%2C736&sr=8-1",
     overallScore: 4.7,
     effectiveness: 4.8,
     value: 4.7,
@@ -119,12 +113,9 @@ The jar comes with a spatula, which is a nice touch for hygiene, though I still 
       "Easy precision applicator",
       "Buildable color intensity",
     ],
-    cons: [
-      "Removal requires oil-based cleanser",
-      "Can feel drying if not prepped",
-      "Limited shade variety",
-    ],
-    amazonUrl: "https://www.amazon.com/Wonderskin-Blading-Lasting-Transfer-Waterproof/dp/",
+    cons: ["Removal requires oil-based cleanser", "Can feel drying if not prepped", "Limited shade variety"],
+    amazonUrl:
+      "https://www.amazon.com/Wonderskin-Blading-Transfer-Waterproof-Whimsical/dp/B0B9YHX8DX/ref=sr_1_1?crid=2D6S4CYFPHHL8&dib=eyJ2IjoiMSJ9.J9VG4z9MLr34QvvyJjSSreuYOjh_Fg0lBe2KNQQSFpoynBMUcxUDeguQaphjsHUj6tk9l97RYa19AHSMQig_gcHqgqG4igkJJs9HA424yHu8CKtzrOlJ6S2JlWfYrIAE163CgDxkXEZXifrd6jhP1ELIo-YCjvehJqNwUiOCXFfNr8b8aXzrMoCAqNCh7J7q_pnKoZVJsZcdhck7dJmgsW_ea6y9V3dLU9nJv3hq0Ndw_f6aiWtU8e99hI-m9esScWmEUW36UEptu3xEsRtmnLTG2aNlZqk36j4vGeK-hIQ.3x2weo1KBW1vVEBTZfDzte3WwzTFUfCYh6xNl-So8Ho&dib_tag=se&keywords=Wonderskin+Lip+Stain+Blading+Long-Lasting&qid=1759825002&sprefix=wonderskin+lip+stain+blading+long-lasting%2Caps%2C262&sr=8-1",
     overallScore: 4.6,
     effectiveness: 4.7,
     value: 4.6,
@@ -161,11 +152,7 @@ Removal takes effort - micellar water alone won't cut it; I need an oil cleanser
       "Light herbal scent",
       "Pump dispenser for hygiene",
     ],
-    cons: [
-      "Low lather may feel insufficient",
-      "Not ideal for heavy makeup removal",
-      "Bottle size runs small",
-    ],
+    cons: ["Low lather may feel insufficient", "Not ideal for heavy makeup removal", "Bottle size runs small"],
     amazonUrl: "https://www.amazon.com/ANUA-Heartleaf-Cleansing-Cleanser-Blackheads/dp/",
     overallScore: 4.7,
     effectiveness: 4.8,
@@ -203,11 +190,7 @@ The pump bottle is travel-friendly and hygienic, with a fresh, herbal scent that
       "Mirror included for portability",
       "Long-lasting pigmentation",
     ],
-    cons: [
-      "Some shades similar in tone",
-      "Shimmers need primer",
-      "Compact but bulky for travel",
-    ],
+    cons: ["Some shades similar in tone", "Shimmers need primer", "Compact but bulky for travel"],
     amazonUrl: "https://www.amazon.com/URBAN-DECAY-Eyeshadow-Everyday-Cruelty-free/dp/",
     overallScore: 4.8,
     effectiveness: 4.9,
@@ -245,19 +228,14 @@ The sturdy case with full mirror is a bonus for on-the-go touch-ups, though it's
       "Lightweight daily use",
       "Wide availability",
     ],
-    cons: [
-      "Scent may be strong for some",
-      "Jar less sanitary than pump",
-      "Milder results for deep lines",
-    ],
+    cons: ["Scent may be strong for some", "Jar less sanitary than pump", "Milder results for deep lines"],
     amazonUrl: "https://www.amazon.com/LOreal-Paris-Moisturizer-Revitalift-Anti-Aging/dp/",
     overallScore: 4.9,
     effectiveness: 4.9,
     value: 5.0,
     packaging: 4.5,
     skinType: ["All skin types", "Aging skin", "Dry skin"],
-    howToUse:
-      "Apply generously to face and neck after cleansing. Use morning and night. Pair with SPF during day.",
+    howToUse: "Apply generously to face and neck after cleansing. Use morning and night. Pair with SPF during day.",
     reviewText: `L'Oreal's Revitalift has been my secret weapon against aging on a budget - it delivers spa-like results without the spa price. The hyaluronic acid quenches thirst instantly, while pro-retinol works overnight to smooth texture and firm.
 
 After two months, fine lines around my mouth have softened, and my skin feels bouncier. The cream absorbs fast, no grease, and layers under makeup flawlessly. The subtle fresh scent is invigorating, not overpowering.
@@ -287,19 +265,14 @@ The jar is generous-sized and easy to scoop, though a spatula helps with hygiene
       "Smudge-proof formula",
       "Clean, vegan ingredients",
     ],
-    cons: [
-      "Wand may be too curved for some",
-      "Dries down fast",
-      "Average volume boost",
-    ],
+    cons: ["Wand may be too curved for some", "Dries down fast", "Average volume boost"],
     amazonUrl: "https://www.amazon.com/Thrive-Causemetics-Extensions-Lengthening-Volumizing/dp/",
     overallScore: 4.5,
     effectiveness: 4.6,
     value: 4.5,
     packaging: 4.7,
     skinType: ["All eye types", "Sensitive eyes"],
-    howToUse:
-      "Curl lashes. Apply from root to tip with zigzag motion. Build layers. Remove with warm water.",
+    howToUse: "Curl lashes. Apply from root to tip with zigzag motion. Build layers. Remove with warm water.",
     reviewText: `Thrive's Liquid Lash Mascara gives falsies-without-the-fuss vibes with its tubing technology that slides off with warm water - genius for sensitive eyes. The orchid stem cells condition while the formula lengthens dramatically, fanning lashes beautifully.
 
 One coat separates and defines; two add intensity without clumps. It withstands humidity and tears, no smudges. Lashes feel healthier after weeks, less brittle.
@@ -329,19 +302,14 @@ The curved wand grabs every lash, though hood-eyed folks might trim it. Packagin
       "Silky, non-sticky feel",
       "Visible elasticity boost",
     ],
-    cons: [
-      "Rich texture for oily skin",
-      "Jar hygiene concerns",
-      "Subtle scent lingers",
-    ],
+    cons: ["Rich texture for oily skin", "Jar hygiene concerns", "Subtle scent lingers"],
     amazonUrl: "https://www.amazon.com/Medicube-Triple-Collagen-Cream-Moisturizer/dp/",
     overallScore: 4.8,
     effectiveness: 4.9,
     value: 4.7,
     packaging: 4.6,
     skinType: ["Dry skin", "Mature skin", "Dull skin"],
-    howToUse:
-      "Apply as last step PM routine. Massage upward. Use pea-size amount; pair with device for absorption.",
+    howToUse: "Apply as last step PM routine. Massage upward. Use pea-size amount; pair with device for absorption.",
     reviewText: `Medicube's Triple Collagen Cream is a night-time indulgence that pays off come morning. The low-molecular collagens sink in deep, firming and plumping while ceramides lock in moisture for supple skin.
 
 Waking to dewier, bouncier complexion after a month - pores refined, lines softened. Texture's rich yet absorbs fully, no pillow grease. Subtle glow rivals gua sha.
@@ -371,19 +339,14 @@ Glass jar's elegant but use spatula. Scent's clean, fades fast. Worth every penn
       "No oxidation issues",
       "30-shade inclusive range",
     ],
-    cons: [
-      "Sheer for full coverage needs",
-      "Pump dispenses generously",
-      "Matte finish requires glow add",
-    ],
+    cons: ["Sheer for full coverage needs", "Pump dispenses generously", "Matte finish requires glow add"],
     amazonUrl: "https://www.amazon.com/Bare-Minerals-Original-Foundation-Medium/dp/",
     overallScore: 4.7,
     effectiveness: 4.8,
     value: 4.6,
     packaging: 4.7,
     skinType: ["All skin types", "Sensitive skin", "Acne-prone"],
-    howToUse:
-      "Shake well. Apply with brush/sponge for sheer; fingers for buildable. Set lightly if oily.",
+    howToUse: "Shake well. Apply with brush/sponge for sheer; fingers for buildable. Set lightly if oily.",
     reviewText: `Bare Minerals' Liquid Foundation redefined 'no-makeup makeup' for me - medium coverage that evens without masking. Minerals like titanium dioxide blur imperfections naturally, while hyaluronic plumps.
 
 Lasts 8-10 hours, breathable sans caking. Shades match truly, no orange shift. Feels like skincare, not paint - my sensitive skin's dream.
@@ -490,14 +453,6 @@ export default async function ProductReviewPage({ params }: PageProps) {
                     <ShoppingCart className="h-5 w-5 mr-2" />
                     Buy on Amazon
                   </a>
-                </Button>
-                <Button variant="outline" size="lg">
-                  <Heart className="h-5 w-5 mr-2" />
-                  Save
-                </Button>
-                <Button variant="outline" size="lg">
-                  <Share2 className="h-5 w-5 mr-2" />
-                  Share
                 </Button>
               </div>
 
@@ -690,48 +645,41 @@ export default async function ProductReviewPage({ params }: PageProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-playfair text-3xl font-bold text-foreground mb-8 text-center">You might also like</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              "cerave-hydrating-cleanser",
-              "the-ordinary-niacinamide",
-              "fenty-beauty-gloss-bomb",
-              "waterproof-mascara",
-              "matte-liquid-lipstick-set",
-              "hydrating-night-cream",
-              "gentle-cleansing-oil",
-              "eyeshadow-palette-neutral-tones",
-              "retinol-anti-aging-cream",
-              "hyaluronic-acid-moisturizer",
-              "foundation-full-coverage",
-            ].map((relatedId) => {
-              const relatedProduct = products[relatedId as keyof typeof products]
-              return (
-                <Card key={relatedProduct.slug} className="group cursor-pointer">
-                  <div className="relative overflow-hidden">
-                    <img
-                      src={relatedProduct.images[0] || "/placeholder.svg"}
-                      alt={relatedProduct.name}
-                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <CardContent className="p-6">
-                    <div className="flex items-center mb-2">
-                      {[...Array(5)].map((_, j) => (
-                        <Star key={j} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                      ))}
-                      <span className="ml-2 text-sm text-muted-foreground">({relatedProduct.reviews})</span>
-                    </div>
-                    <h3 className="font-semibold text-lg mb-2">{relatedProduct.name}</h3>
-                    <p className="text-muted-foreground text-sm mb-4">{relatedProduct.description}</p>
-                    <div className="flex items-center justify-between">
-                      <span className="font-bold text-xl">{relatedProduct.price}</span>
-                      <Button size="sm" asChild>
-                        <Link href={`/reviews/${relatedProduct.slug}`}>View Review</Link>
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              )
-            })}
+            {["la-roche-posay-vitamin-c-serum", "collagen-face-moisturizer-cream", "wonderskin-lip-stain-blading"]
+              .filter((relatedSlug) => relatedSlug !== slug)
+              .slice(0, 3)
+              .map((relatedSlug) => {
+                const relatedProduct = products[relatedSlug as keyof typeof products]
+                if (!relatedProduct) return null
+                return (
+                  <Link key={relatedProduct.slug} href={`/reviews/${relatedProduct.slug}`} className="block">
+                    <Card className="group cursor-pointer hover:shadow-lg transition-shadow h-full">
+                      <div className="relative overflow-hidden">
+                        <img
+                          src={relatedProduct.images[0] || "/placeholder.svg"}
+                          alt={relatedProduct.name}
+                          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <CardContent className="p-6">
+                        <div className="flex items-center mb-2">
+                          {[...Array(5)].map((_, j) => (
+                            <Star
+                              key={j}
+                              className={`h-4 w-4 ${j < Math.floor(relatedProduct.rating) ? "fill-yellow-400 text-yellow-400" : "text-gray-300"}`}
+                            />
+                          ))}
+                          <span className="ml-2 text-sm text-muted-foreground">({relatedProduct.reviews})</span>
+                        </div>
+                        <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
+                          {relatedProduct.name}
+                        </h3>
+                        <p className="text-muted-foreground text-sm line-clamp-2">{relatedProduct.description}</p>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                )
+              })}
           </div>
         </div>
       </section>

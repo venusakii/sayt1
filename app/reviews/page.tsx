@@ -54,7 +54,8 @@ const products = [
     rating: 4.7,
     reviews: 312,
     image: "https://m.media-amazon.com/images/I/61nHrsCJT1L._SX679_.jpg",
-    description: "Gentle, pH-balanced cleanser that removes impurities while calming sensitive skin and reducing blackheads",
+    description:
+      "Gentle, pH-balanced cleanser that removes impurities while calming sensitive skin and reducing blackheads",
     featured: false,
   },
   {
@@ -231,47 +232,40 @@ export default function ReviewsPage() {
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredAndSortedProducts.map((product) => (
-                <Card
-                  key={product.slug}
-                  className="group cursor-pointer overflow-hidden hover:shadow-lg transition-shadow"
-                >
-                  <div className="relative">
-                    <img
-                      src={product.image || "/placeholder.svg"}
-                      alt={product.name}
-                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                    {product.featured && <Badge className="absolute top-4 left-4">Featured</Badge>}
-                    <Button variant="ghost" size="sm" className="absolute top-4 right-4 bg-white/80 hover:bg-white">
-                      <Heart className="h-4 w-4" />
-                    </Button>
-                  </div>
-
-                  <CardContent className="p-6">
-                    <div className="flex items-center justify-between mb-2">
-                      <Badge variant="secondary" className="text-xs">
-                        {product.category}
-                      </Badge>
-                      <div className="flex items-center">
-                        <Star className="h-4 w-4 fill-yellow-400 text-yellow-400 mr-1" />
-                        <span className="text-sm font-medium">{product.rating}</span>
-                        <span className="text-sm text-muted-foreground ml-1">({product.reviews})</span>
-                      </div>
-                    </div>
-
-                    <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
-                      {product.name}
-                    </h3>
-
-                    <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{product.description}</p>
-
-                    <div className="flex items-center justify-end">
-                      <Button size="sm" asChild>
-                        <Link href={`/reviews/${product.slug}`}>Read Review</Link>
+                <Link key={product.slug} href={`/reviews/${product.slug}`} className="block">
+                  <Card className="group cursor-pointer overflow-hidden hover:shadow-lg transition-shadow h-full">
+                    <div className="relative">
+                      <img
+                        src={product.image || "/placeholder.svg"}
+                        alt={product.name}
+                        className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      {product.featured && <Badge className="absolute top-4 left-4">Featured</Badge>}
+                      <Button variant="ghost" size="sm" className="absolute top-4 right-4 bg-white/80 hover:bg-white">
+                        <Heart className="h-4 w-4" />
                       </Button>
                     </div>
-                  </CardContent>
-                </Card>
+
+                    <CardContent className="p-6">
+                      <div className="flex items-center justify-between mb-2">
+                        <Badge variant="secondary" className="text-xs">
+                          {product.category}
+                        </Badge>
+                        <div className="flex items-center">
+                          <Star className="h-4 w-4 fill-yellow-400 text-yellow-400 mr-1" />
+                          <span className="text-sm font-medium">{product.rating}</span>
+                          <span className="text-sm text-muted-foreground ml-1">({product.reviews})</span>
+                        </div>
+                      </div>
+
+                      <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
+                        {product.name}
+                      </h3>
+
+                      <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{product.description}</p>
+                    </CardContent>
+                  </Card>
+                </Link>
               ))}
             </div>
           )}
