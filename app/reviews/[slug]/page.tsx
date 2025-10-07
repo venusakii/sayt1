@@ -37,7 +37,7 @@ const products = {
     ],
     cons: ["May oxidize if not stored properly", "Slight tingling on first use", "Dropper can be messy"],
     amazonUrl:
-      "https://www.amazon.com/s?k=La+Roche-Posay+Vitamin+C+Face+Serum&crid=1ZDFWW23SMX3O&sprefix=la+roche-posay+vitamin+c+face+serum%2Caps%2C888&ref=nb_sb_noss_1",
+      "https://www.amazon.com/Roche-Posay-vitamin-renovator-radiance/dp/B07PM79MSC/ref=sr_1_1?crid=2PHD8ZUN2KMQO&dib=eyJ2IjoiMSJ9.Aabz5bLk7tsy2ezVq-1wmct0aJdboI0kh5lkeBb3VbyF5lWt2qODzDgZLCWKjYrLiQmy4TJX3jEeM7M_RR2RnbTEVFq6Qw2FGcPULbzO59nEJ_qItPfG4dxy6XxVa4p9Dy2nadwTtBXsgXGAP2aITvspKb1wquwZBCN2NrVveSaRXH98BZCBdC_eydQgRc44Mpi5Kpz0HaiyiKKjHEYlRWAwGE4TmMyKVi8kWYkktTbbL3iFqA-iXFwBNEuxAlSiAuyIPaIzL1nxBJgWScBJ9E6Er4QQ4hLt_jhT7Q_Qbaw.pTxNYcR_fecjLT1dhY_cWyjOgUVs0JmJv1j3JwHpcdw&dib_tag=se&keywords=La+Roche-Posay+Vitamin+C+Face+Serum&qid=1759825409&sprefix=la+roche-posay+vitamin+c+face+serum%2Caps%2C739&sr=8-1",
     overallScore: 4.8,
     effectiveness: 4.9,
     value: 4.7,
@@ -51,60 +51,60 @@ From the first week, I noticed a subtle brightening effect - my skin tone looked
 
 The dark glass bottle with dropper is practical for preserving the vitamin C's potency, though I do keep it in a cool, dark place as recommended. There's a faint medicinal scent that dissipates quickly, which I don't mind at all. For the price, this delivers clinical-level results without the hassle of prescription treatments. If you're new to vitamin C, this is an excellent starting point - just remember sunscreen is non-negotiable!`,
   },
-  "collagen-face-moisturizer-cream": {
-    slug: "collagen-face-moisturizer-cream",
-    name: "Collagen Face Moisturizer Cream",
+  "simplyvital-collagen-face-moisturizer": {
+    slug: "simplyvital-collagen-face-moisturizer",
+    name: "SimplyVital Collagen Face Moisturizer",
     category: "Skincare",
     price: "$29.99",
-    originalPrice: "$39.99",
+    originalPrice: "$43.85",
     rating: 4.7,
     reviews: 189,
     images: [
-      "https://m.media-amazon.com/images/I/71PmiO3ss2L._SX679_.jpg",
-      "https://m.media-amazon.com/images/I/71PmiO3ss2L._SX679_.jpg",
-      "https://m.media-amazon.com/images/I/71PmiO3ss2L._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71dHs21sZaL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71dHs21sZaL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71dHs21sZaL._SX679_.jpg",
     ],
     description:
-      "Hydrating collagen-infused cream that firms and plumps skin for a youthful appearance with added peptides for elasticity.",
-    ingredients: ["Hydrolyzed Collagen", "Peptides", "Hyaluronic Acid", "Niacinamide", "Shea Butter"],
+      "Hydrating collagen-infused cream that firms and plumps skin for a youthful appearance with retinol and hyaluronic acid for renewal.",
+    ingredients: ["Hydrolyzed Marine Collagen", "Retinol", "Hyaluronic Acid", "Aloe Vera", "Vitamin E"],
     pros: [
-      "Noticeable plumping effect",
-      "Lightweight yet deeply moisturizing",
-      "Improves skin firmness",
-      "Non-comedogenic formula",
-      "Pleasant subtle scent",
+      "Promotes firmer skin texture",
+      "Deep hydration without greasiness",
+      "Gentle retinol for beginners",
+      "Made in USA with clean formula",
+      "Suitable for face and neck",
     ],
-    cons: ["May pill under certain serums", "Jar packaging less hygienic", "Results take 4-6 weeks"],
+    cons: ["May increase sun sensitivity", "Jar packaging requires clean hands", "Build-up time for results"],
     amazonUrl:
-      "https://www.amazon.com/Face-Moisturizer-Collagen-Cream-Moisturizing/dp/B0BBSP2JNQ/ref=sr_1_1?crid=733K962KVKPT&dib=eyJ2IjoiMSJ9.3NaKYvp5dML77F3uduRlaD3Gm2IaC9THP-rFefF5h9qC-QtRI-15zwLSyCl-X80_ZrZ7HtVs82SiVzqRV3jzRsaX814vrg76E0-fLnlRluqt4rO2-uwwhjhJXrv3qMzp8zbbuS6NaW8dMRaNpjw9ap933GoJCqzLI1EuKphYpHslRhP8y3Fx_iPaPv7TMX7fnAWBmwtpSKKNnwE22gMdRRbCrIVDQweFvQ28Sw2nApVIKEnvasvpPQaw4ySqC-mNhfvhyDYO5jmwWCCB5ba5K5zLFBU_cI0iPYH_Iz1EdAA.ZPY7u2pdC9_jzFtpIRMwgCfk_BUUalWEmGfQi-QHric&dib_tag=se&keywords=Collagen+Face+Moisturizer+Cream&qid=1759824949&sprefix=collagen+face+moisturizer+cream%2Caps%2C736&sr=8-1",
+      "https://www.amazon.com/SimplyVital-Collagen-Face-Moisturizer-Anti-Aging/dp/B0DFD4N1Z4/ref=sr_1_1_sspa?crid=3HVB0NIUMTAKT&dib=eyJ2IjoiMSJ9.hU1aIbgX7QLtEDCdtVia2vSGxFS41I65IWTlLuBwKq5a3Lr8reZmLkFE_g1IrBRcY6cHPVwUtz4CZw53ou6QfkqedLcf3rLzAtWeg48HWBZ7GtrxHmSHiGAjK1CWpN14NQx8DxgMsGnqjf4glHgq2oV28wkf1pAjvlmQUt6Gty6M2MX3E7X3g-KnDyI3quI-h5GGuNIfuTcX1n73FPLZHIxilZUo4vnJwBHmWYAe8MGKikNMt-73n17HZvp6EMTCOi-UY8HMYnoZw8jqzVfMA8LapWJUniy4YRmfzZV3zRA.E5PPrOLzgbeUqYMWM1DAv9q75BweL5iwg4_6A5gbyBw&dib_tag=se&keywords=Collagen%2BFace%2BMoisturizer%2BCream&qid=1759825434&sprefix=collagen%2Bface%2Bmoisturizer%2Bcream%2Caps%2C268&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1",
     overallScore: 4.7,
     effectiveness: 4.8,
     value: 4.7,
     packaging: 4.5,
     skinType: ["Dry skin", "Mature skin", "Combination skin"],
     howToUse:
-      "Apply a dime-sized amount to clean face and neck morning and evening. Massage gently until absorbed. Follow with SPF in the AM.",
-    reviewText: `This collagen moisturizer has been a pleasant surprise in my routine - it's one of those products that quietly delivers results over time. The formula feels luxurious, with a creamy texture that melts into the skin without any heaviness, making it suitable even for my combination skin type.
+      "Apply a small amount to clean face and neck morning and evening. Start 1-2 times weekly if sensitive. Follow with SPF in AM.",
+    reviewText: `This SimplyVital Collagen Moisturizer has transformed my evening routine into a simple, effective anti-aging step. The blend of marine collagen and retinol works synergistically to firm and renew, while hyaluronic acid keeps everything hydrated without that heavy feel.
 
-After consistent use for six weeks, I've seen a subtle but real improvement in my skin's firmness around the jawline and cheeks. The hydrolyzed collagen and peptides work together to plump and support elasticity, while hyaluronic acid ensures deep hydration without greasiness. My makeup applies more smoothly now, and I wake up with softer, more supple skin.
+After consistent use for a month, my skin feels noticeably smoother around the jawline, with a subtle plumping that makes pores look refined. It's gentle enough for daily wear, and the unscented formula plays well with my other products. No breakouts, just gradual glow-up.
 
-The jar comes with a spatula, which is a nice touch for hygiene, though I still prefer pump packaging. The scent is light and clean, fading quickly. At this price, it's an accessible way to incorporate anti-aging benefits without overwhelming actives. It's not a miracle worker overnight, but for daily maintenance, it's fantastic value.`,
+The jar is recyclable and substantial, though I use a spatula for hygiene. For the discounted price, it's a steal compared to department store creams. If you're easing into retinol, this is forgiving and rewarding - my skin's thanking me already.`,
   },
   "wonderskin-lip-stain-blading": {
     slug: "wonderskin-lip-stain-blading",
-    name: "Wonderskin Lip Stain Blading Long-Lasting",
+    name: "Wonderskin Wonder Blading All Day Lip Stain",
     category: "Makeup",
     price: "$19.99",
-    originalPrice: "$24.99",
+    originalPrice: "$22.00",
     rating: 4.6,
     reviews: 456,
     images: [
-      "https://m.media-amazon.com/images/I/713iq9WwmUL._SX679_.jpg",
-      "https://m.media-amazon.com/images/I/713iq9WwmUL._SX679_.jpg",
-      "https://m.media-amazon.com/images/I/713iq9WwmUL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71UHmMTqHJL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71UHmMTqHJL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71UHmMTqHJL._SX679_.jpg",
     ],
     description:
-      "Transfer-proof, waterproof lip stain that delivers all-day color without smudging using innovative blading applicator technology.",
+      "Transfer-proof, waterproof lip stain that delivers all-day color without smudging using patented Wonderblading technology.",
     ingredients: ["Aloe Vera", "Vitamin E", "Hyaluronic Acid", "Glycerin", "Natural Pigments"],
     pros: [
       "Lasts 12+ hours without fading",
@@ -115,7 +115,7 @@ The jar comes with a spatula, which is a nice touch for hygiene, though I still 
     ],
     cons: ["Removal requires oil-based cleanser", "Can feel drying if not prepped", "Limited shade variety"],
     amazonUrl:
-      "https://www.amazon.com/Wonderskin-Blading-Transfer-Waterproof-Whimsical/dp/B0B9YHX8DX/ref=sr_1_1?crid=2D6S4CYFPHHL8&dib=eyJ2IjoiMSJ9.J9VG4z9MLr34QvvyJjSSreuYOjh_Fg0lBe2KNQQSFpoynBMUcxUDeguQaphjsHUj6tk9l97RYa19AHSMQig_gcHqgqG4igkJJs9HA424yHu8CKtzrOlJ6S2JlWfYrIAE163CgDxkXEZXifrd6jhP1ELIo-YCjvehJqNwUiOCXFfNr8b8aXzrMoCAqNCh7J7q_pnKoZVJsZcdhck7dJmgsW_ea6y9V3dLU9nJv3hq0Ndw_f6aiWtU8e99hI-m9esScWmEUW36UEptu3xEsRtmnLTG2aNlZqk36j4vGeK-hIQ.3x2weo1KBW1vVEBTZfDzte3WwzTFUfCYh6xNl-So8Ho&dib_tag=se&keywords=Wonderskin+Lip+Stain+Blading+Long-Lasting&qid=1759825002&sprefix=wonderskin+lip+stain+blading+long-lasting%2Caps%2C262&sr=8-1",
+      "https://www.amazon.com/Wonderskin-Blading-Lasting-Waterproof-Transfer/dp/B0BGSW6XBP/ref=sr_1_1_sspa?crid=3JEID0V5EI1LD&dib=eyJ2IjoiMSJ9.-g6-spG3QVd5OCkecFtgQwqHWO0ni0j5lmdgmb7vhegJqgk4GjnuyjT31AL_3swTYW5-EPpK6Q0KKcDQn9ezWbHTundiRVINuARnjkF9J_AzEjWNfZ6x6QksDJnb8tCcdurck0BN9qOOG7JXtIgFzHYbSCEidf4zKPW46aYhuRJ81XWRDmY6YDrqHBbeYXt6G1Mc99wuLKNN8dMbZjSGsSDanq8kmO4BNVjtIcprWoPD3W0MY89_vwgqAFcxnffd0wW14QcVNZIp-JP-JVN7HtMfIvEC3dveaRmzHzpb1CE.QuwRmBM_8EvZZ4AMOafQFowg1qtRYusWT-FMNU_FftU&dib_tag=se&keywords=Wonderskin+Lip+Stain+Blading+Long-Lasting&qid=1759825485&sprefix=wonderskin+lip+stain+blading+long-lasting%2Caps%2C264&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1",
     overallScore: 4.6,
     effectiveness: 4.7,
     value: 4.6,
@@ -131,7 +131,7 @@ Removal takes effort - micellar water alone won't cut it; I need an oil cleanser
   },
   "anua-heartleaf-cleansing-cleanser": {
     slug: "anua-heartleaf-cleansing-cleanser",
-    name: "ANUA Heartleaf 77% Soothing Cleanser",
+    name: "ANUA Heartleaf Cleansing Cleanser",
     category: "Skincare",
     price: "$18.99",
     originalPrice: "$22.99",
@@ -153,7 +153,8 @@ Removal takes effort - micellar water alone won't cut it; I need an oil cleanser
       "Pump dispenser for hygiene",
     ],
     cons: ["Low lather may feel insufficient", "Not ideal for heavy makeup removal", "Bottle size runs small"],
-    amazonUrl: "https://www.amazon.com/ANUA-Heartleaf-Cleansing-Cleanser-Blackheads/dp/",
+    amazonUrl:
+      "https://www.amazon.com/ANUA-Heartleaf-Cleansing-Cleanser-Blackheads/dp/B0BN2PX8V3/ref=sr_1_2_sspa?crid=3QDNYCSAGGR8I&dib=eyJ2IjoiMSJ9.aXhoyO0RXoxIS1m69IxMbMRWcgp6ONEeclLjmOY3e-1ujVRfGyHfG3GTPmEXChZF5mZHQDDGdELpuDlglobg3UXmZuMqpilsHd1LGflHPhAhMGDrPtpRKKozV4JiNCZHjJKrSePWrIgbRt3ygsbLTBN5Hk9Lt5M0qHMaLvrBs_0AxSw5jVRCrdZo-_jkEnmUBf9y1yUQS-X0yqglHVpBK4UNY4Xpd76DJU11LcgWeBV-Bmn42wNhyadLFsuTnpQgZJh22yLxnLquVl5Zb40KVGW_uu1jvLZ9GMRlHnWzuZ0.pmNX54oWDZu5ammcP2dFdwE-S0B2v9p6RUha7z6cjjQ&dib_tag=se&keywords=ANUA+Heartleaf+77%25+Soothing+Cleanser&qid=1759825535&sprefix=anua+heartleaf+77%25+soothing+cleanser%2Caps%2C236&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1",
     overallScore: 4.7,
     effectiveness: 4.8,
     value: 4.7,
@@ -169,7 +170,7 @@ The pump bottle is travel-friendly and hygienic, with a fresh, herbal scent that
   },
   "urban-decay-naked-eyeshadow-palette": {
     slug: "urban-decay-naked-eyeshadow-palette",
-    name: "Urban Decay Naked Eyeshadow Palette",
+    name: "URBAN DECAY Naked 3 Mini Eyeshadow Palette",
     category: "Makeup",
     price: "$54.99",
     originalPrice: null,
@@ -181,7 +182,7 @@ The pump bottle is travel-friendly and hygienic, with a fresh, herbal scent that
       "https://m.media-amazon.com/images/I/716d48S0WBL._SX522_.jpg",
     ],
     description:
-      "Iconic neutral eyeshadow palette with 12 versatile shades for everyday and dramatic looks, featuring velvety mattes and subtle shimmers.",
+      "Iconic neutral eyeshadow palette with 6 versatile rosy shades for everyday and dramatic looks, featuring velvety mattes and shimmers.",
     ingredients: ["Talc", "Mica", "Dimethicone", "Ethylhexyl Palmitate", "Mineral Pigments"],
     pros: [
       "Buttery, blendable formula",
@@ -191,7 +192,8 @@ The pump bottle is travel-friendly and hygienic, with a fresh, herbal scent that
       "Long-lasting pigmentation",
     ],
     cons: ["Some shades similar in tone", "Shimmers need primer", "Compact but bulky for travel"],
-    amazonUrl: "https://www.amazon.com/URBAN-DECAY-Eyeshadow-Everyday-Cruelty-free/dp/",
+    amazonUrl:
+      "https://www.amazon.com/URBAN-DECAY-Eyeshadow-Everyday-Cruelty-free/dp/B095PSJ7QV/ref=sr_1_2?crid=3KEFQDGQWQHK7&dib=eyJ2IjoiMSJ9.LIQw8sbp_zLXgBgXWkKVzL0PzaGaaQrvM_x-cBpFEE6zoDc79Vd9JjDwxXHqmP43D1wgvYpak-vuY_bbFOwePC9DX43zrIjdDxgiwFoytkTEWonGLKbdOUKz3aWygGqhT33zOTz_x1TgnCI7OjP6ZySvt0FyiGzrwdya6KGcV_StMqPwywBE2oblWW6lCe2viF1HAb7-xGI5RaxbhAavJceJRPUVG8l8qTPzFi1fIZywBXlUgM5AlEF_ROl3BcJLtrLiCJzxHj6P-9XW-bR1OJJF6wlZEGNlIjFjl-wzm0Y.xpmHETLLXEwyr_v8ptphISa5l_89_AzzJXWXANeXKqw&dib_tag=se&keywords=Urban+Decay+Naked+Eyeshadow+Palette&qid=1759825569&sprefix=urban+decay+naked+eyeshadow+palette%2Caps%2C249&sr=8-2",
     overallScore: 4.8,
     effectiveness: 4.9,
     value: 4.7,
@@ -199,7 +201,7 @@ The pump bottle is travel-friendly and hygienic, with a fresh, herbal scent that
     skinType: ["All skin tones", "All eye types"],
     howToUse:
       "Prime lids first. Use a fluffy brush for blending mattes in crease; pack shimmers on lid with finger. Set with primer for longevity.",
-    reviewText: `The Urban Decay Naked Palette lives up to its legendary status - it's the ultimate neutral collection for effortless eye looks. The 12 shades strike a perfect balance of everyday taupes and smokier browns, with mattes that blend like butter and shimmers that catch light beautifully without glitter bombs.
+    reviewText: `The Urban Decay Naked 3 Mini Palette lives up to its legendary status - it's the ultimate neutral collection for effortless eye looks. The 6 rosy shades strike a perfect balance of everyday pinks and mauves, with mattes that blend like butter and shimmers that catch light beautifully without glitter bombs.
 
 Pigmentation is spot-on: one swipe shows true color, and blending is seamless, even for beginners. I've worn these shades through 10-hour days with minimal fade, thanks to the primer-infused formula. No fallout means clean application every time.
 
@@ -214,9 +216,9 @@ The sturdy case with full mirror is a bonus for on-the-go touch-ups, though it's
     rating: 4.9,
     reviews: 167,
     images: [
-      "https://m.media-amazon.com/images/I/81tTgiDDyWL._SX679_.jpg",
-      "https://m.media-amazon.com/images/I/81tTgiDDyWL._SX679_.jpg",
-      "https://m.media-amazon.com/images/I/81tTgiDDyWL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71FNxwqISJL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71FNxwqISJL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71FNxwqISJL._SX679_.jpg",
     ],
     description:
       "Hyaluronic acid moisturizer that hydrates deeply and smooths fine lines for firmer skin with pro-retinol for gentle renewal.",
@@ -229,7 +231,8 @@ The sturdy case with full mirror is a bonus for on-the-go touch-ups, though it's
       "Wide availability",
     ],
     cons: ["Scent may be strong for some", "Jar less sanitary than pump", "Milder results for deep lines"],
-    amazonUrl: "https://www.amazon.com/LOreal-Paris-Moisturizer-Revitalift-Anti-Aging/dp/",
+    amazonUrl:
+      "https://www.amazon.com/LOreal-Paris-Revitalift-Moisturizer-Hyaluronic/dp/B008EKY8VK/ref=sr_1_3?crid=T03CBLISI8O6&dib=eyJ2IjoiMSJ9.cByuxToRhbwnzqVB9sSEGHZwl0xJXFL8-F3ts1vFC21E2p9y9bf7N7qOokDkshpWsQKxBMLiv7KCbI8hwaJiGOZAEKpw_uuFU6v5h3nAGQfNn2gJVXomQc34GHJcWmzJXXXT8qgpKiiedBnyN4aN1KMkJL3UMPRuY3zwQLCjYmTkp81zbpUeQwOk8nvSK_8EQdKd_9gjEg7NGbBctYo2Z23w44Bn1MZLLAWfjSjaugKSDJLl4ST7xW4_Gn3abGjSeyTTINWCYwDPcwoGJxD4_ei8frFF62jSLqV0S0BW0Ww.bvhV-HxTpXhNKA9D__c5zc3tJRBRhVInUi7kY_9yhf0&dib_tag=se&keywords=L%27Oreal+Paris+Revitalift+Anti-Aging+Moisturizer&qid=1759825603&sprefix=l%27oreal+paris+revitalift+anti-aging+moisturizer%2Caps%2C260&sr=8-3",
     overallScore: 4.9,
     effectiveness: 4.9,
     value: 5.0,
@@ -266,7 +269,8 @@ The jar is generous-sized and easy to scoop, though a spatula helps with hygiene
       "Clean, vegan ingredients",
     ],
     cons: ["Wand may be too curved for some", "Dries down fast", "Average volume boost"],
-    amazonUrl: "https://www.amazon.com/Thrive-Causemetics-Extensions-Lengthening-Volumizing/dp/",
+    amazonUrl:
+      "https://www.amazon.com/Thrive-Causemetics-Extensions-Lengthening-Volumizing/dp/B0F566TFJN/ref=sr_1_1_sspa?crid=K0VTVRC2QPZX&dib=eyJ2IjoiMSJ9.e9HUgQquiiTaGIONvpzru6CbRipdmyy4CiF971ckyyjMI89_UTwrUh2Nxyk5noTDSvMoS_-UZIEC8dYJPOj-kcLujAXGCYgD-K8ud2pUQ5njAYDr48YeICMi5obQ2FsCdBVq1QrlatYI8vaa8hsnzmt55tqgfdm3mCOZMsz1yXsEFCd5z2dl1SFitdn8pofpEgfTaPpf7RexDm-93CdDS90dBt36D_M6nL0-k-ptg5fzd3XYRMV1zMHsqQz6UBMhPoHTVDtwXCaECpxtdSRBM-4wEDygktk52e8R0wMRdW4.3C_Pcv1_V4svt7nb8CDgqMBTsuKVy5NQ0PW3alGB9S8&dib_tag=se&keywords=Thrive+Causemetics+Liquid+Lash+Extensions+Mascara&qid=1759825625&sprefix=thrive+causemetics+liquid+lash+extensions+mascara%2Caps%2C236&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1",
     overallScore: 4.5,
     effectiveness: 4.6,
     value: 4.5,
@@ -281,7 +285,7 @@ The curved wand grabs every lash, though hood-eyed folks might trim it. Packagin
   },
   "medicube-triple-collagen-cream": {
     slug: "medicube-triple-collagen-cream",
-    name: "Medicube Triple Collagen Cream Moisturizer",
+    name: "Medicube Triple Collagen Cream",
     category: "Skincare",
     price: "$49.99",
     originalPrice: "$59.99",
@@ -303,7 +307,8 @@ The curved wand grabs every lash, though hood-eyed folks might trim it. Packagin
       "Visible elasticity boost",
     ],
     cons: ["Rich texture for oily skin", "Jar hygiene concerns", "Subtle scent lingers"],
-    amazonUrl: "https://www.amazon.com/Medicube-Triple-Collagen-Cream-Moisturizer/dp/",
+    amazonUrl:
+      "https://www.amazon.com/Medicube-Triple-Collagen-Cream-Moisturizer/dp/B0BPXT3GBN/ref=sr_1_1?crid=23SQPB4ECY08Z&dib=eyJ2IjoiMSJ9.Jcnc7h_akUanKNGRuNivK2cj1Dx1NuQUqFw7IpQnYowkNglNfyL8KqS3jGp9oWKGQjrEFYwMrph3Lblb20g1jQzbL9LtqDqcrGvr5EPD3om0ky-Gb5O_BWUlrdPbCL0nhbjVihjvZ8vSi0PpWyDZbRq6GgmwXnf3sGLCA5bdflkGI5PJuuwAsclEE1qNHzYt74uCqUmxMVBbj22tCSdrs1J_CNdWsNOUv_1rXke0qzkh0Q0y49tOFXrHFPAYNVffpqQ5P9bKqPyMdaDhsGZSNEBPuT-6YUQuijvUzPlAmDA.I4cOQi6Y4e6z8-2GMC-WrpTHbKL06UPaUhTWMph-mYM&dib_tag=se&keywords=Medicube+Triple+Collagen+Cream+Moisturizer&qid=1759825661&sprefix=medicube+triple+collagen+cream+moisturizer%2Caps%2C235&sr=8-1",
     overallScore: 4.8,
     effectiveness: 4.9,
     value: 4.7,
@@ -318,16 +323,16 @@ Glass jar's elegant but use spatula. Scent's clean, fades fast. Worth every penn
   },
   "bare-minerals-original-liquid-foundation": {
     slug: "bare-minerals-original-liquid-foundation",
-    name: "Bare Minerals Original Liquid Mineral Foundation",
+    name: "bareMinerals Original Mineral Foundation",
     category: "Makeup",
     price: "$42.99",
     originalPrice: "$49.99",
     rating: 4.7,
     reviews: 289,
     images: [
-      "https://m.media-amazon.com/images/I/81724OgyQ6L._SX522_.jpg",
-      "https://m.media-amazon.com/images/I/81724OgyQ6L._SX522_.jpg",
-      "https://m.media-amazon.com/images/I/81724OgyQ6L._SX522_.jpg",
+      "https://m.media-amazon.com/images/I/81BPcYQQA7L._SX522_.jpg",
+      "https://m.media-amazon.com/images/I/81BPcYQQA7L._SX522_.jpg",
+      "https://m.media-amazon.com/images/I/81BPcYQQA7L._SX522_.jpg",
     ],
     description:
       "Medium-coverage, breathable foundation with mineral-based formula for a natural, flawless finish infused with skincare benefits.",
@@ -340,7 +345,8 @@ Glass jar's elegant but use spatula. Scent's clean, fades fast. Worth every penn
       "30-shade inclusive range",
     ],
     cons: ["Sheer for full coverage needs", "Pump dispenses generously", "Matte finish requires glow add"],
-    amazonUrl: "https://www.amazon.com/Bare-Minerals-Original-Foundation-Medium/dp/",
+    amazonUrl:
+      "https://www.amazon.com/bareMinerals-Original-Mineral-Foundation-Spectrum/dp/B007HTXER8/ref=sr_1_1?crid=1GV42ZQ4KP8EW&dib=eyJ2IjoiMSJ9.VgSNjV1xDnsYD7KSQ1aYRPKOD2v9l6AD1AvTIMAOe-3fXrlIJGah6SJ-KDKrKysUI9K-X38nj44SdLb6S0SX3_V4_NoCr0-NPEYXl4aJfFxixPj05Rrl1GRKPgUNDkcQtGmjqyPxL3JztMqbWGgVLpabMKCpLzOhMQHlGU6M6FWQ2hVCU_4BzYlz33xSMaAYUVxxZvD1aoC1IYUTKabs8Vda89wkE9-lJDGd6a0Z8hLkxZvIKJjdhoFJzswjwJwUq6pyW85IubdCQDleREJkWeqOgT_MRU3ALLfu4jz3pf0.rQPFcYkT8utZF3zX2jJMLnWKfJhOijPLa4U91uT_lTo&dib_tag=se&keywords=Bare+Minerals+Original+Liquid+Mineral+Foundation&qid=1759825687&sprefix=bare+minerals+original+liquid+mineral+foundation%2Caps%2C289&sr=8-1",
     overallScore: 4.7,
     effectiveness: 4.8,
     value: 4.6,
