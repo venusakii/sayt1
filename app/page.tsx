@@ -178,7 +178,7 @@ export default function HomePage() {
                   Gentle daily cleanser with ceramides and hyaluronic acid for normal to dry skin.
                 </p>
                 <div className="flex items-center justify-between">
-                  <span className="font-bold text-xl">$12.99</span>
+                  
                   <Button size="sm" asChild>
                     <Link href="/reviews/cerave-hydrating-cleanser">View Review</Link>
                   </Button>
@@ -208,7 +208,7 @@ export default function HomePage() {
                   High-strength vitamin and mineral blemish formula for clearer skin.
                 </p>
                 <div className="flex items-center justify-between">
-                  <span className="font-bold text-xl">$7.90</span>
+                  
                   <Button size="sm" asChild>
                     <Link href="/reviews/the-ordinary-niacinamide">View Review</Link>
                   </Button>
@@ -237,7 +237,7 @@ export default function HomePage() {
                   Explosive shine that feels as good as it looks in universal Fenty Glow.
                 </p>
                 <div className="flex items-center justify-between">
-                  <span className="font-bold text-xl">$22.00</span>
+                  
                   <Button size="sm" asChild>
                     <Link href="/reviews/fenty-beauty-gloss-bomb">View Review</Link>
                   </Button>

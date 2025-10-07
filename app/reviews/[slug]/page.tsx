@@ -359,6 +359,121 @@ Lasts 8-10 hours, breathable sans caking. Shades match truly, no orange shift. F
 
 Dropper bottle's precise, recyclable. At $43, it's premium natural coverage. Everyday essential for that fresh-faced vibe.`,
   },
+  "cerave-hydrating-cleanser": {
+    slug: "cerave-hydrating-cleanser",
+    name: "CeraVe Hydrating Facial Cleanser",
+    category: "Skincare",
+    price: "$12.99",
+    originalPrice: "$15.99",
+    rating: 4.7,
+    reviews: 1847,
+    images: ["/cerave-hydrating-cleanser.jpg", "/cerave-cleanser-back.jpg", "/cerave-cleanser-texture.jpg"],
+    description:
+      "Gentle, non-foaming cleanser that hydrates and restores the skin's protective barrier with ceramides and hyaluronic acid.",
+    ingredients: ["Ceramides", "Hyaluronic Acid", "Glycerin", "MVE Technology", "Non-comedogenic"],
+    pros: [
+      "Fragrance-free and gentle",
+      "Maintains skin barrier",
+      "Suitable for sensitive skin",
+      "Affordable drugstore option",
+      "Dermatologist recommended",
+    ],
+    cons: ["Minimal lather may feel unusual", "Not ideal for heavy makeup removal", "Pump bottle can clog"],
+    amazonUrl:
+      "https://www.amazon.com/CeraVe-Hydrating-Facial-Cleanser-Fragrance/dp/B01MSSDEPK/ref=sr_1_5?crid=1ZDFWW23SMX3O&dib=eyJ2IjoiMSJ9.APzV_En2JNWzK7v-DbDPDpnLCvTExeBlICcoyActPHjEA6ocCroSUy6g_og5vqCNoV2QIMpmgWObtEFqtBeWF5hYWegbZrD5n-pIeTypB-ooRMSo-NOuV7EMsy5019Zd9D4TF3rUgdZfIlpckVHegZDFdGb8dChLZrbCq9TCYeOpjXQ8CckJdpyNs8juE_EtY2U48yY-UGiztvLSA8IH8pfp2njcgwv2fGzDA-1rGOoa4vJNYDuEVFFwz8YWnY0FZJh22yLxnLquVl5Zb40KVFfefcWH5hQkza_qXtxlJk0.VYBNLT-RqcUFsqU2jVZdMdEz_VJwoUxMtqlve8L-LL0&dib_tag=se&keywords=CeraVe+Hydrating+Facial+Cleanser&qid=1759825131&sprefix=cerave+hydrating+facial+cleanser%2Caps%2C768&sr=8-5",
+    overallScore: 4.7,
+    effectiveness: 4.8,
+    value: 5.0,
+    packaging: 4.4,
+    skinType: ["All skin types", "Dry skin", "Sensitive skin"],
+    howToUse:
+      "Wet face with lukewarm water. Massage cleanser onto skin in gentle circular motions. Rinse thoroughly and pat dry. Use morning and evening.",
+    reviewText: `CeraVe Hydrating Facial Cleanser has earned its cult status for good reason - it's the gentle giant of cleansers that respects your skin barrier while effectively removing daily grime. The creamy, lotion-like texture feels soothing on contact, and the ceramide-rich formula works to restore and maintain your skin's natural protective barrier.
+
+What sets this apart is the MVE (MultiVesicular Emulsion) technology that releases ceramides and hyaluronic acid gradually throughout the day, providing continuous hydration long after cleansing. After two weeks of use, my skin felt noticeably softer and less tight, with none of the squeaky-clean stripping sensation that harsh cleansers leave behind.
+
+The fragrance-free formula is a blessing for sensitive skin, and it's non-comedogenic, so no breakout worries. While it doesn't lather much - which can feel odd at first - it cleanses thoroughly without disrupting your skin's pH balance. For heavy makeup, I recommend a first cleanse with micellar water, then follow with this.
+
+At under $13, this is an absolute steal that rivals luxury cleansers. The pump bottle is convenient, though it can occasionally clog. Dermatologists recommend it for a reason - it's simple, effective, and kind to your skin. My morning and evening essential.`,
+  },
+  "the-ordinary-niacinamide": {
+    slug: "the-ordinary-niacinamide",
+    name: "The Ordinary Niacinamide 10% + Zinc 1%",
+    category: "Skincare",
+    price: "$7.90",
+    originalPrice: null,
+    rating: 4.6,
+    reviews: 2847,
+    images: ["/the-ordinary-niacinamide.jpg", "/ordinary-niacinamide-bottle.jpg", "/ordinary-niacinamide-texture.jpg"],
+    description:
+      "High-strength vitamin and mineral blemish formula that reduces the appearance of blemishes and congestion with visible skin-brightening effects.",
+    ingredients: ["10% Niacinamide", "1% Zinc PCA", "Hyaluronic Acid", "Tasmanian Pepperberry", "Water-based serum"],
+    pros: [
+      "Affordable and effective",
+      "Reduces pore appearance",
+      "Controls oil production",
+      "Brightens skin tone",
+      "Minimal ingredient list",
+    ],
+    cons: [
+      "Can pill under makeup if not absorbed",
+      "May cause purging initially",
+      "Strong concentration for beginners",
+    ],
+    amazonUrl:
+      "https://www.amazon.com/Ordinary-Serum-Favorites-Set-Pore-Minimizing/dp/B07QFHZZZL/ref=sr_1_2?crid=1JI808B6P26Y2&dib=eyJ2IjoiMSJ9.zXjMkd-rCnWy8M76PlpKfz5MD0QDHcDXCSitBXtOQ_PZHZLM0eTXQkK_uzgx8ngXvjd09OsayzSAtpTGv-HtAJitnuEOd68eV_eaOePUJVY.vx7aa_F2gK7_npSRb1ubcvvgq3S3shgAqoXepnp61Mc&dib_tag=se&keywords=The+Ordinary+Niacinamide+10%25+%2B+Zinc+1%25&qid=1759855353&sprefix=the+ordinary+niacinamide+10%25+%2B+zinc+1%25%2Caps%2C721&sr=8-2",
+    overallScore: 4.6,
+    effectiveness: 4.7,
+    value: 5.0,
+    packaging: 4.3,
+    skinType: ["Oily skin", "Acne-prone skin", "Combination skin"],
+    howToUse:
+      "Apply to entire face morning and evening before heavier creams. A tingling sensation is normal. Avoid use with pure Vitamin C or direct acids.",
+    reviewText: `The Ordinary Niacinamide 10% + Zinc 1% has earned its cult status as the ultimate budget-friendly blemish fighter. At under $8, this water-based serum delivers clinical-strength niacinamide that visibly reduces pore size, regulates sebum production, and brightens uneven skin tone - all without breaking the bank.
+
+The lightweight, slightly viscous texture absorbs quickly, though I've learned to use a light hand and let it fully dry before layering other products to avoid pilling. Within two weeks of consistent use, my T-zone oil production noticeably decreased, and my pores looked refined. After a month, old acne marks faded significantly, and new breakouts were less frequent and less severe.
+
+The 1% zinc PCA works synergistically with niacinamide to calm inflammation and control excess oil, making this ideal for oily and acne-prone skin types. The formula is fragrance-free and contains minimal ingredients, which my sensitive skin appreciates. Some users experience an initial purging phase as the serum brings congestion to the surface - this is normal and temporary.
+
+The dropper bottle is functional but basic, and the serum can oxidize if exposed to light for extended periods, so I keep mine in a drawer. For the price point, this is hands-down the best niacinamide serum on the market. It's become a non-negotiable step in my routine, and I've repurchased it countless times. If you're dealing with enlarged pores, oiliness, or post-acne marks, this is your solution.`,
+  },
+  "fenty-beauty-gloss-bomb": {
+    slug: "fenty-beauty-gloss-bomb",
+    name: "Fenty Beauty Gloss Bomb Universal Lip Luminizer",
+    category: "Makeup",
+    price: "$22.00",
+    originalPrice: null,
+    rating: 4.7,
+    reviews: 1523,
+    images: ["/fenty-beauty-gloss-bomb.jpg", "/fenty-gloss-bomb-open.jpg", "/fenty-gloss-bomb-lips.jpg"],
+    description:
+      "Universal lip luminizer that delivers explosive shine with a non-sticky formula, infused with shea butter for comfort.",
+    ingredients: ["Shea Butter", "Vitamin E", "Peach Extract", "Vanilla Extract", "Light-reflecting pearls"],
+    pros: [
+      "Universal shade flatters all skin tones",
+      "Non-sticky, comfortable formula",
+      "Explosive shine without grittiness",
+      "Subtle peach-vanilla scent",
+      "Can be worn alone or over lipstick",
+    ],
+    cons: ["Needs frequent reapplication", "Scent may be too sweet for some", "Pricey for a lip gloss"],
+    amazonUrl:
+      "https://www.amazon.com/FENTY-BEAUTY-RIHANNA-Universal-Luminizer/dp/B098CG8NVN/ref=sr_1_4?crid=2MHA7NTWPRW76&dib=eyJ2IjoiMSJ9.TTLHmSaFHePidMRsnyK_JLfzeqU1OjBiJWqYHsAy-1WKFf7E5pY7_BFHod3U67ZooNfP2xUTL0bCeFVRHbS_4JrYh6qYUHN_4LZRu9D48unGJRBfPkl_UKNDmVxj43tzUnHntw1VEqFG9x7nrz_Y0A6QsR7tl5OCg0MCN3b-4T3Q_18R_Vg-3N2QDQKbzYlvwGrd3EjMoSpUcLYo86Tk8Xu1ciIhlzvlc6BEcDn64fJxrawZoZPWFm7vQrFEGeiGSMyfZgAOeH_VhtJ75dzNyA2RroqOtO9p-5dIAVqhOjw.bnlQYDO0iuUxnHJfdxZBdvde8T38U9q6n1_kgj_Nhfg&dib_tag=se&keywords=Fenty+Beauty+Gloss+Bomb+Universal+Lip+Luminizer&qid=1759855543&sprefix=fenty+beauty+gloss+bomb+universal+lip+luminizer%2Caps%2C1099&sr=8-4",
+    overallScore: 4.7,
+    effectiveness: 4.8,
+    value: 4.5,
+    packaging: 4.9,
+    skinType: ["All skin tones", "All lip types"],
+    howToUse:
+      "Apply directly to lips using the doe-foot applicator. Wear alone for a glossy look or layer over lipstick for added dimension. Reapply as desired throughout the day.",
+    reviewText: `Fenty Beauty's Gloss Bomb has earned its cult status as the ultimate universal lip gloss that truly works for everyone. The "Fu$$y" shade is a sheer peach with gold pearl that adapts beautifully to all skin tones, creating a customized glow that enhances your natural lip color rather than masking it.
+
+The formula is where this gloss truly shines - literally. It delivers an explosive, glass-like shine that catches light from every angle, thanks to the light-reflecting pearls suspended in the formula. Unlike many high-shine glosses, this one isn't sticky or tacky. The texture is smooth and cushiony, gliding on effortlessly and feeling comfortable for hours. The shea butter and vitamin E keep lips hydrated and soft, so you're not just getting shine - you're getting nourishment too.
+
+The scent is a delicious peach-vanilla blend that's sweet but not overpowering, and it fades quickly after application. The oversized doe-foot applicator makes precise application easy, coating lips evenly in one swipe. The sleek, weighty packaging feels luxurious and the clear tube lets you see exactly how much product remains.
+
+While the gloss does require reapplication after eating or drinking, the wear time is decent for a non-sticky formula - about 2-3 hours of comfortable wear. At $22, it's on the pricier side for a lip gloss, but the quality, versatility, and universal appeal make it worth the investment. This is the gloss that launched a thousand dupes, and for good reason - it's simply that good. Whether you're a gloss minimalist or maximalist, this belongs in your collection.`,
+  },
 }
 
 interface PageProps {
@@ -651,7 +766,14 @@ export default async function ProductReviewPage({ params }: PageProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-playfair text-3xl font-bold text-foreground mb-8 text-center">You might also like</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {["la-roche-posay-vitamin-c-serum", "collagen-face-moisturizer-cream", "wonderskin-lip-stain-blading"]
+            {[
+              "la-roche-posay-vitamin-c-serum",
+              "simplyvital-collagen-face-moisturizer",
+              "wonderskin-lip-stain-blading",
+              "anua-heartleaf-cleansing-cleanser",
+              "the-ordinary-niacinamide",
+              "fenty-beauty-gloss-bomb",
+            ]
               .filter((relatedSlug) => relatedSlug !== slug)
               .slice(0, 3)
               .map((relatedSlug) => {
